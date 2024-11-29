@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabMark - Bookmark New Tab | Choose Your Language</title>
+    
+    <!-- 告诉搜索引擎不要索引这个页面 -->
+    <meta name="robots" content="noindex">
+    
+    <!-- 指定规范链接到英文版本 -->
+    <link rel="canonical" href="./public/en/index.html">
+    
+    <!-- 语言标签 -->
+    <link rel="alternate" hreflang="en" href="./public/en/index.html">
+    <link rel="alternate" hreflang="zh-CN" href="./public/zh-cn/index.html">
+    
+    <!-- 自动跳转脚本 -->
     <script>
         const userLang = navigator.language || navigator.userLanguage;
         const browserLang = userLang.toLowerCase().slice(0, 2);
-        let redirectLang = 'en';
-        
-        if (browserLang === 'zh') {
-            redirectLang = 'zh-cn';
-        }
-        
-        // 更新路径指向具体的 index.html 文件
+        let redirectLang = browserLang === 'zh' ? 'zh-cn' : 'en';
         window.location.replace(`./public/${redirectLang}/index.html`);
     </script>
+    
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        .lang-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .lang-list a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #f5f5f5;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <!-- 后备链接也指向具体的 index.html 文件 -->
-    <p>If you are not redirected automatically, please choose your language:</p>
-    <ul>
-        <li><a href="./public/en/index.html">English</a></li>
-        <li><a href="./public/zh-cn/index.html">中文</a></li>
+    <h1>TabMark - Bookmark New Tab</h1>
+    <p>Please choose your language / 请选择语言：</p>
+    <ul class="lang-list">
+        <li><a href="./public/en/index.html" hreflang="en">English</a></li>
+        <li><a href="./public/zh-cn/index.html" hreflang="zh-CN">中文</a></li>
     </ul>
 </body>
 </html> 
