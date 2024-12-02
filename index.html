@@ -9,18 +9,18 @@
     <meta name="robots" content="noindex">
     
     <!-- 指定规范链接到英文版本 -->
-    <link rel="canonical" href="./public/en/index.html">
+    <link rel="canonical" href="./en/index.html">
     
     <!-- 语言标签 -->
-    <link rel="alternate" hreflang="en" href="./public/en/index.html">
-    <link rel="alternate" hreflang="zh-CN" href="./public/zh-cn/index.html">
+    <link rel="alternate" hreflang="en" href="./en/index.html">
+    <link rel="alternate" hreflang="zh-CN" href="./zh-cn/index.html">
     
     <!-- 自动跳转脚本 -->
     <script>
         const userLang = navigator.language || navigator.userLanguage;
         const browserLang = userLang.toLowerCase().slice(0, 2);
         let redirectLang = browserLang === 'zh' ? 'zh-cn' : 'en';
-        window.location.replace(`./public/${redirectLang}/index.html`);
+        window.location.replace(`./${redirectLang}/index.html`);
     </script>
     
     <style>
@@ -50,8 +50,8 @@
     <h1>TabMark - Bookmark New Tab</h1>
     <p>Please choose your language / 请选择语言：</p>
     <ul class="lang-list">
-        <li><a href="./public/en/index.html" hreflang="en">English</a></li>
-        <li><a href="./public/zh-cn/index.html" hreflang="zh-CN">中文</a></li>
+        <li><a href="./en/index.html" hreflang="en">English</a></li>
+        <li><a href="./zh-cn/index.html" hreflang="zh-CN">中文</a></li>
     </ul>
 </body>
 </html> 

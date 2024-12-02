@@ -7,12 +7,12 @@
     <link rel="icon" type="image/svg+xml" href="../favicon.png">
     <meta name="generator" content="Astro v1.9.2">
     <meta name="description"
-        content="TabMark - Bookmark New Tab is a Chrome extension that lets you set your most frequently used bookmarks as tab pages with one click. No complicated operations needed - just one click to set your most visited bookmarks as your homepage, and use AI search in new tabs for an efficient search experience.">
+        content="TabMark is a Chrome new tab extension that supports setting bookmarks as homepage, AI smart search, multi-engine comparison search and other features to make your browsing experience more efficient.">
     <meta name="keywords"
         content="TabMark - Bookmark New Tab, tab, google chrome, new tab, infinity tab, custom bookmarks, custom new tab, start page, tab extension, new tab page, design, aesthetics, bookmark management, bookmark homepage, favorites bar management, browser homepage, browser design customization, ai search">
     <meta name="msvalidate.01" content="95F687B6489089359B18DE496FD5F23B" />
     <meta name="baidu-site-verification" content="codeva-D9jHMnyxP5" />
-    <title>TabMark - Bookmark New Tab</title>
+    <title>TabMark - Bookmark Management and AI Search New Tab Extension | Chrome Extension</title>
     <link as="font" crossorigin rel="preload"
         href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4fFg.ttf" type="font/ttf">
     <link as="font" crossorigin rel="preload"
@@ -72,7 +72,7 @@
         }
     </style>
 
-    <link rel="stylesheet" href="../../assets/index.5bb06fcb.css" />
+    <link rel="stylesheet" href="../assets/index.5bb06fcb.css" />
     <script type="module">let e = !1; const s = document.querySelector("#navlinks"), l = document.querySelector("#hamburger"), t = document.querySelector("#navLayer"), i = [...s.querySelector("ul").children]; function a() { e ? (s.classList.add("!visible", "!scale-100", "!opacity-100", "!lg:translate-y-0"), l.classList.add("toggled"), t.classList.add("origin-top", "scale-y-100")) : (s.classList.remove("!visible", "!scale-100", "!opacity-100", "!lg:translate-y-0"), l.classList.remove("toggled"), t.classList.remove("origin-top", "scale-y-100")) } l.addEventListener("click", () => { e = !e, a() }); i.forEach(c => { c.addEventListener("click", () => { e = !e, a() }) });
     </script>
     <!-- Google tag (gtag.js) -->
@@ -83,6 +83,89 @@
         gtag('js', new Date());
 
         gtag('config', 'G-21ZMLLTMMH');
+    </script>
+
+    <!-- Add Schema.org data for software application -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TabMark",
+      "applicationCategory": "Browser Extension",
+      "operatingSystem": "Chrome","Edge",
+      "description": "A smart bookmark management and AI search Chrome new tab extension",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <!-- Add SEO meta tags -->
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="TabMark - Bookmark Management and AI Search New Tab Extension">
+    <meta property="og:description" content="TabMark is a Chrome new tab extension that supports setting bookmarks as homepage, AI smart search, multi-engine comparison search and other features.">
+    <meta property="og:image" content="https://www.ainewtab.app/screenshot.png">
+    <meta property="og:url" content="https://www.ainewtab.app/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TabMark - Bookmark Management and AI Search New Tab Extension">
+    <meta name="twitter:description" content="TabMark is a Chrome new tab extension that supports setting bookmarks as homepage, AI smart search, multi-engine comparison search and other features.">
+    <meta name="twitter:image" content="https://www.ainewtab.app/screenshot.png">
+
+    <!-- Add canonical and alternate language links -->
+    <link rel="canonical" href="https://www.ainewtab.app/en/index.html" />
+    <link rel="alternate" hreflang="en" href="https://www.ainewtab.app/en/index.html" />
+    <link rel="alternate" hreflang="zh-CN" href="https://www.ainewtab.app/zh-cn/index.html" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
+    <!-- Add FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How to set bookmarks as homepage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Select a folder in the TabMark sidebar or folder card, right-click and choose 'Set as Homepage' from the context menu. You can arrange bookmarks by dragging and dropping, and manage bookmark folders through the sidebar tree view."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How to use AI search features?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use AI search directly in new tabs, with support for Doubao, Kimi, Metaso, Felo, ChatGPT and other AI search engines, as well as traditional search engines like Google and Bing. You can freely arrange the search engines to match your preferences."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How to use comparison search?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enter search terms in the new tab search box and use Cmd/Ctrl + Enter to search all engines at once. On any webpage, select text and click the sidebar search icon or use shortcuts (Alt + 1-6) to search in corresponding engines, making it easy to compare different results."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How to manage bookmark groups?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Through the sidebar's tree view, you can easily manage your bookmark folder structure. Support for expanding/collapsing folders helps you quickly locate and access the bookmarks you need."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How to customize search engines?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can adjust the order of search engines by dragging and dropping, placing frequently used search engines in more accessible positions. Supports various types including AI search, traditional search, and social media search."
+        }
+      }]
+    }
     </script>
 </head>
 
@@ -98,7 +181,7 @@
                     <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max astro-HAP4XUPI">
                         <a href="/#home" aria-label="logo" class="flex items-center space-x-2 astro-HAP4XUPI">
                             <div aria-hidden="true" class="flex space-x-1 astro-HAP4XUPI">
-                                <img src="../../icon-128.png" alt="Logo" class="h-6 w-6 astro-HAP4XUPI">
+                                <img src="../icon-128.png" alt="Logo" class="h-6 w-6 astro-HAP4XUPI">
                             </div>
 
                             <span class="text-2xl font-bold text-gray-900 dark:text-white astro-HAP4XUPI">TabMark</span>
@@ -179,7 +262,7 @@
                             </a>
                         </div>
                     </div>
-                    <img src="../../screenshot.png" alt="scri" class="mt-16 mx-auto shadow-xl">
+                    <img src="../screenshot.png" alt="scri" class="mt-16 mx-auto shadow-xl">
                 </div>
             </div>
         </div>
@@ -283,51 +366,51 @@
                 </div>
                 <div class="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
                     <div class="p-4  transition duration-200 hover:grayscale-0">
-                        <img src="../../images/clients/google-logo.svg" class="h-8 w-auto mx-auto" loading="lazy"
+                        <img src="../images/clients/google-logo.svg" class="h-8 w-auto mx-auto" loading="lazy"
                             alt="client logo" width="" height="">
                     </div>
                     <div class="p-4  transition duration-200 hover:grayscale-0">
-                        <img src="../../images/clients/bing-logo.png" class="h-8 w-auto mx-auto" loading="lazy"
+                        <img src="../images/clients/bing-logo.png" class="h-8 w-auto mx-auto" loading="lazy"
                             alt="client logo" width="" height="">
                     </div>
                     <div class="p-4 flex transition duration-200 hover:grayscale-0">
-                        <img src="../../images/clients/chatgpt-logo.svg" class="h-8 w-auto m-auto" loading="lazy"
+                        <img src="../images/clients/chatgpt-logo.svg" class="h-8 w-auto m-auto" loading="lazy"
                             alt="client logo" width="" height="">
                     </div>
                     <div class="p-4 transition duration-200 hover:grayscale-0">
-                        <img src="../../images/clients/felo-logo.svg" class="h-8 w-auto mx-auto" loading="lazy"
+                        <img src="../images/clients/felo-logo.svg" class="h-8 w-auto mx-auto" loading="lazy"
                             alt="client logo" width="" height="">
                     </div>
                     <div class="p-4 flex transition duration-200 hover:grayscale-0">
-                        <img src="../../images/clients/doubao-logo.png" class="h-8 w-auto m-auto" loading="lazy"
+                        <img src="../images/clients/doubao-logo.png" class="h-8 w-auto m-auto" loading="lazy"
                             alt="client logo" width="" height="">
                     </div>
                     <div class="p-4 transition duration-200 hover:grayscale-0">
-                        <img src="../../images/clients/kimi-logo.svg" class="h-8 w-auto mx-auto" loading="lazy"
+                        <img src="../images/clients/kimi-logo.svg" class="h-8 w-auto mx-auto" loading="lazy"
                             alt="client logo" width="" height="">
                     </div>
                     <div class="p-4  transition duration-200 hover:grayscale-0">
-                        <img src="../../images/clients/metaso-logo.png" class="h-8 w-auto mx-auto" loading="lazy"
+                        <img src="../images/clients/metaso-logo.png" class="h-8 w-auto mx-auto" loading="lazy"
                             alt="client logo" width="" height="">
                     </div>
                     <div class="p-4 grayscale flex transition duration-200 hover:grayscale-0">
-                        <img src="../../images/clients/perplexity-logo.svg" class="h-8 w-auto m-auto" loading="lazy"
+                        <img src="../images/clients/perplexity-logo.svg" class="h-8 w-auto m-auto" loading="lazy"
                             alt="client logo" width="" height="">
                     </div>
                     <div class="p-4 grayscale flex transition duration-200 hover:grayscale-0">
-                        <img src="../../images/clients/claude-logo.svg" class="h-8 w-auto m-auto" loading="lazy"
+                        <img src="../images/clients/claude-logo.svg" class="h-8 w-auto m-auto" loading="lazy"
                             alt="client logo" width="" height="">
                     </div>
                     <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <img src="../../images/clients/jike-logo.svg" class="h-12 w-auto mx-auto" loading="lazy"
+                        <img src="../images/clients/jike-logo.svg" class="h-12 w-auto mx-auto" loading="lazy"
                             alt="client logo" width="" height="">
                     </div>
                     <div class="p-4 grayscale flex transition duration-200 hover:grayscale-0">
-                        <img src="../../images/clients/twitter-logo.png" class="h-8 w-auto m-auto" loading="lazy"
+                        <img src="../images/clients/twitter-logo.png" class="h-8 w-auto m-auto" loading="lazy"
                             alt="client logo" width="" height="">
                     </div>
                     <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <img src="../../images/clients/xiaohongshu-logo.svg" class="h-8 w-auto mx-auto" loading="lazy"
+                        <img src="../images/clients/xiaohongshu-logo.svg" class="h-8 w-auto mx-auto" loading="lazy"
                             alt="client logo" width="" height="">
                     </div>
                 </div>
@@ -357,6 +440,83 @@
                 </div>
             </div>
         </div>
+        <div class="relative py-16" id="faq">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="md:w-2/3 lg:w-1/2 mx-auto text-center mb-16">
+                    <div class="flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-secondary">
+                            <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    
+                    <h2 class="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                        Frequently Asked Questions
+                    </h2>
+                </div>
+                
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <!-- FAQ Items -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                How to set bookmarks as homepage?
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                Select a folder in the TabMark sidebar or folder card, right-click and choose "Set as Homepage" from the context menu. You can arrange bookmarks by dragging and dropping, and manage bookmark folders through the sidebar tree view.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                How to use AI search features?
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                Use AI search directly in new tabs, with support for Doubao, Kimi, Metaso, Felo, ChatGPT and other AI search engines, as well as traditional search engines like Google and Bing. You can freely arrange the search engines to match your preferences.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                How to use comparison search?
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                Enter search terms in the new tab search box and use Cmd/Ctrl + Enter to search all engines at once. On any webpage, select text and click the sidebar search icon or use shortcuts (Alt + 1-6) to search in corresponding engines, making it easy to compare different results.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                How to manage bookmark groups?
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                Through the sidebar's tree view, you can easily manage your bookmark folder structure. Support for expanding/collapsing folders helps you quickly locate and access the bookmarks you need.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                How to customize search engines?
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                You can adjust the order of search engines by dragging and dropping, placing frequently used search engines in more accessible positions. Supports various types including AI search, traditional search, and social media search.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </main>
@@ -369,7 +529,7 @@
                         <ul role="list" class="flex space-x-6"> <!-- 添加 flex 类 -->
                             <li>
                                 <a href="#" class="flex items-center space-x-3 transition hover:text-primary">
-                                    <img src="../../icon-128.png" alt="Logo" class="h-6 w-6">
+                                    <img src="../icon-128.png" alt="Logo" class="h-6 w-6">
                                     <span>TabMark - Bookmark New Tab</span>
                                 </a>
                             </li>
