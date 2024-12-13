@@ -5,7 +5,7 @@
     <!-- 中文主页 -->
     <url>
         <loc>https://www.ainewtab.app/zh-cn</loc>
-        <lastmod>2024-12-04</lastmod>
+        <lastmod>2024-12-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link 
@@ -21,7 +21,7 @@
     <!-- 英文主页 -->
     <url>
         <loc>https://www.ainewtab.app/en</loc>
-        <lastmod>2024-12-04</lastmod>
+        <lastmod>2024-12-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link 
