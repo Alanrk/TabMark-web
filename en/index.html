@@ -7,12 +7,12 @@
     <link rel="icon" type="image/svg+xml" href="../favicon.png">
     <meta name="generator" content="Astro v1.9.2">
     <meta name="description"
-        content="Transform your Chrome new tab with TabMark. Set bookmarks as homepage, use AI search, and enhance your browsing with smart features.">
+        content="Transform your Chrome new tab with TabMark. Set bookmarks as new tab page, use AI search, and enhance your browsing with smart features.">
     <meta name="keywords"
         content="TabMark - Bookmark New Tab, tab, google chrome, new tab, custom bookmarks, custom new tab, start page, tab extension, new tab page, design, aesthetics, bookmark management, bookmark homepage, favorites bar management, browser homepage, browser design customization, ai search">
     <meta name="msvalidate.01" content="95F687B6489089359B18DE496FD5F23B" />
     <meta name="baidu-site-verification" content="codeva-D9jHMnyxP5" />
-    <title>TabMark - Bookmark & AI Search Chrome New Tab Extension</title>
+    <title>TabMark - Bookmark & AI Search New Tab Extension</title>
     <link as="font" crossorigin rel="preload"
         href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4fFg.ttf" type="font/ttf">
     <link as="font" crossorigin rel="preload"
@@ -86,21 +86,43 @@
     </script>
 
     <!-- Add Schema.org data for software application -->
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"TabMark","applicationCategory":"BrowserExtension","operatingSystem":["Chrome OS","Windows","macOS","Linux"],"description":"A smart bookmark management and AI search Chrome new tab extension","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"softwareVersion":"1.232","url":"https://www.ainewtab.app","downloadUrl":"https://chromewebstore.google.com/detail/tabmark-bookmark-new-tab/jpejneelbjckppjapemgfeheifljmaib","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","ratingCount":"10"}}</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "TabMark",
+        "applicationCategory": "BrowserExtension",
+        "description": "A Chrome new tab extension that transforms your bookmarks into new tab page, featuring AI smart search.",
+        "operatingSystem": ["Chrome OS","Windows","macOS","Linux"],
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "softwareVersion": "1.232",
+        "url": "https://www.ainewtab.app",
+        "downloadUrl": "https://chromewebstore.google.com/detail/tabmark-bookmark-new-tab/jpejneelbjckppjapemgfeheifljmaib",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "ratingCount": "10"
+        }
+    }
+    </script>
 
     <!-- Add SEO meta tags -->
     <meta name="robots" content="index, follow">
     <!-- Open Graph tags -->
-    <meta property="og:title" content="TabMark - Bookmark Management and AI Search New Tab Extension">
-    <meta property="og:description" content="TabMark is a Chrome new tab extension that supports setting bookmarks as homepage, AI smart search, multi-engine comparison search and other features.">
+    <meta property="og:title" content="TabMark - Make Your Bookmarks Visible Again">
+    <meta property="og:description" content="TabMark transforms your bookmarks into new tab page, featuring AI smart search to make your browsing more efficient.">
     <meta property="og:image" content="https://www.ainewtab.app/screenshot.png">
     <meta property="og:url" content="https://www.ainewtab.app/">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="TabMark - Bookmark Management and AI Search New Tab Extension">
-    <meta name="twitter:description" content="TabMark is a Chrome new tab extension that supports setting bookmarks as homepage, AI smart search, multi-engine comparison search and other features.">
+    <meta name="twitter:title" content="TabMark - Make Your Bookmarks Visible Again">
+    <meta name="twitter:description" content="TabMark transforms your bookmarks into new tab page, featuring AI smart search to make your browsing more efficient.">
     <meta name="twitter:image" content="https://www.ainewtab.app/screenshot.png">
 
     <!-- Add canonical and alternate language links -->
@@ -111,7 +133,22 @@
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 
     <!-- Add FAQ Schema -->
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How to set bookmarks as homepage?","acceptedAnswer":{"@type":"Answer","text":"Select a folder in the TabMark sidebar or folder card, right-click and choose 'Set as Homepage' from the context menu. You can arrange bookmarks by dragging and dropping, and manage bookmark folders through the sidebar tree view"}},{"@type":"Question","name":"How to use AI search features?","acceptedAnswer":{"@type":"Answer","text":"Use AI search directly in new tabs, with support for Doubao, Kimi, Metaso, Felo, ChatGPT and other AI search engines, as well as traditional search engines like Google and Bing. You can freely arrange the search engines to match your preferences"}},{"@type":"Question","name":"How to use comparison search?","acceptedAnswer":{"@type":"Answer","text":"Enter search terms in the new tab search box and use Cmd/Ctrl + Enter to search all engines at once. On any webpage, select text and click the sidebar search icon or use shortcuts (Alt + 1-6) to search in corresponding engines, making it easy to compare different results"}},{"@type":"Question","name":"How to manage bookmark groups?","acceptedAnswer":{"@type":"Answer","text":"Through the sidebar's tree view, you can easily manage your bookmark folder structure. Support for expanding/collapsing folders helps you quickly locate and access the bookmarks you need"}},{"@type":"Question","name":"How to customize search engines?","acceptedAnswer":{"@type":"Answer","text":"You can adjust the order of search engines by dragging and dropping, placing frequently used search engines in more accessible positions. Supports various types including AI search, traditional search, and social media search"}}]}</script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "How to set bookmarks as new tab page?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Select a folder in the TabMark sidebar or folder card, right-click and choose 'Set as New Tab Page' from the context menu. You can arrange bookmarks by dragging and dropping, and manage bookmark folders through the sidebar tree view"
+            }
+        },
+        // ... other FAQ items ...
+        ]
+    }
+    </script>
 </head>
 
 <body class="bg-white dark:bg-gray-900 astro-BLV3VKFF">
@@ -149,23 +186,25 @@
                     <div id="navlinks"
                         class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none astro-HAP4XUPI">
                         <div class="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0 astro-HAP4XUPI">
-                            <ul
-                                class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-sm astro-HAP4XUPI">
-
+                            <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-sm astro-HAP4XUPI">
                                 <li class="astro-HAP4XUPI">
-                                    <a href="https://cooing-loganberry-b74.notion.site/Tutorial-for-Using-TabMark-Bookmark-New-Tab-14d1ee1c3b3a801684e0ffc4d44fed54"
-                                        target="_blank"
-                                        class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
-                                        <span class="astro-HAP4XUPI">Tutorial</span>
-
+                                    <a href="#features" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                        <span class="astro-HAP4XUPI">Features</span>
                                     </a>
                                 </li>
                                 <li class="astro-HAP4XUPI">
-                                    <a href="https://cooing-loganberry-b74.notion.site/TabMark-Bookmark-New-Tab-Product-Suggestions-14d1ee1c3b3a8063a82ef1b1bfc2e11e"
-                                        target="_blank"
-                                        class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                    <a href="https://cooing-loganberry-b74.notion.site/TabMark-Bookmark-New-Tab-7a083a74f84e4bb48345e389c1e53717?pvs=74" target="_blank" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                        <span class="astro-HAP4XUPI">Blog</span>
+                                    </a>
+                                </li>
+                                <li class="astro-HAP4XUPI">
+                                    <a href="https://cooing-loganberry-b74.notion.site/TabMark-Support-14d1ee1c3b3a8063a82ef1b1bfc2e11e" target="_blank" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                        <span class="astro-HAP4XUPI">Support</span>
+                                    </a>
+                                </li>
+                                <li class="astro-HAP4XUPI">
+                                    <a href="https://cooing-loganberry-b74.notion.site/TabMark-Bookmark-New-Tab-Product-Suggestions-14d1ee1c3b3a8063a82ef1b1bfc2e11e" target="_blank" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
                                         <span class="astro-HAP4XUPI">Feedback</span>
-
                                     </a>
                                 </li>
                                 <li class="astro-HAP4XUPI">
@@ -194,16 +233,16 @@
             <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
                 <div class="relative pt-36 ml-auto">
                     <div class="lg:w-2/3 text-center mx-auto">
-                        <h1 class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">Set Your <span
-                                class="text-primary dark:text-white">Favorite Bookmarks</span><br>as New Tab</h1>
+                        <h1 class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">
+                            Make Your Bookmarks<br><span class="text-primary dark:text-white">Visible Again</span>
+                        </h1>
                         <p class="mt-8 text-gray-700 dark:text-gray-300">
-                            TabMark - Bookmark New Tab is a Chrome extension that lets you set your most frequently used bookmarks as new tab pages with one click. No complicated operations needed - just one click to set your favorite bookmarks as your homepage, and use AI search in new tabs for an efficient browsing experience.
+                            TabMark brings your bookmarks back to life. Transform them into your new tab page, powered by multiple AI search engines, making every browsing session more efficient and delightful. Available for Chrome and Edge.
                         </p>
                         <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-                            <a href="https://chromewebstore.google.com/detail/tabmark-bookmark-new-tab/jpejneelbjckppjapemgfeheifljmaib"
-                                target="_blank"
+                            <a href="javascript:void(0)" onclick="detectBrowserAndRedirect()"
                                 class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
-                                <span class="relative text-base font-semibold text-white">Add to Browser</span>
+                                <span id="browser-button-text" class="relative text-base font-semibold text-white">Add to Browser</span>
                             </a>
                         </div>
                     </div>
@@ -279,7 +318,11 @@
                                     One-Click Compare Search
                                 </h5>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    Search the same content across multiple search engines with one click, compare different results to find the best answer.
+                                    Press Cmd/Ctrl + Enter to instantly search across all search engines, compare different results, and find the best
+                                    answer.
+                                    <br><br>
+                                    After selecting text, quickly launch searches through the sidebar or shortcuts (Alt + 1-7 for specific engines, Cmd/Ctrl
+                                    + Enter for all engines).
                                 </p>
                             </div>
                         </div>
@@ -288,16 +331,17 @@
                         class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
                         <div class="relative space-y-8 py-12 p-8">
                             <span class="w-12 text-5xl inline-block">
-                                🚀
+                                ☀️
                             </span>
 
                             <div class="space-y-2">
                                 <h5
                                     class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                                    Text Selection Search
+                                    Beautify Your New Tab
                                 </h5>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    After selecting text, efficiently launch searches by clicking the sidebar or using shortcuts (Alt + 1-6 for specific search, Cmd/Ctrl + Enter for all searches).
+                                    Customize with dark mode and wallpapers: Choose from 10 curated preset wallpapers or upload your own to personalize your
+                                    new tab page.
                                 </p>
                             </div>
                         </div>
@@ -361,26 +405,54 @@
                 </div>
             </div>
         </div>
-        <div class="relative py-16">
-            <div aria-hidden="true"
-                class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
-                <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
-                <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
-            </div>
+        <div id="testimonials">
             <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
-                <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
-                    <h2 class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">
-                        Start Using TabMark - Bookmark New Tab Now
+                <div class="md:w-2/3 lg:w-1/2 mx-auto text-center">
+                    <div class="flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-secondary">
+                            <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h2 class="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                        User Reviews
                     </h2>
-                    <p class="text-center text-xl text-gray-600 dark:text-gray-300">
-                        More AI search support and useful widgets coming soon...
-                    </p>
-                    <div class="flex flex-wrap justify-center gap-6">
-                        <a href="https://chromewebstore.google.com/detail/TabMark - Bookmark-New-Tab-set-favorite-boo/jpejneelbjckppjapemgfeheifljmaib"
-                            target="_blank"
-                            class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
-                            <span class="relative text-base font-semibold text-white dark:text-dark">Add to Browser</span>
-                        </a>
+                </div>
+                
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-16">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-item">
+                        <img src="../images/avatars/avatars-1.jpg" alt="User Avatar" class="user-avatar">
+                        <div class="rating">
+                            ★★★★★
+                        </div>
+                        <div class="user-name">Chicagoake</div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            "It largely replaces various Arc features! Now that Arc has been abandoned, it's time to return to Chrome!"
+                        </p>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item">
+                        <img src="../images/avatars/avatars-2.jpg" alt="User Avatar" class="user-avatar">
+                        <div class="rating">
+                            ★★★★★
+                        </div>
+                        <div class="user-name">Li**</div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            "TabMark perfectly meets my needs, using bookmarks as new tab pages, with one-click search and automatic grouping - it's really useful!"
+                        </p>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-item">
+                        <img src="../images/avatars/avatars-3.jpg" alt="User Avatar" class="user-avatar">
+                        <div class="rating">
+                            ★★★★★
+                        </div>
+                        <div class="user-name">Yoann</div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            "I see some bookmark/sidebar design elements from Vivaldi and Arc 🤔 Haven't seen anything this interesting in a long time!"
+                        </p>
                     </div>
                 </div>
             </div>
@@ -404,7 +476,7 @@
                     <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
                         <div class="space-y-4">
                             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                How to set bookmarks as homepage?
+                                How to set bookmarks as new tab page?
                             </h3>
                             <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
                                 Select a folder in the TabMark sidebar or folder card, right-click and choose "Set as Homepage" from the context menu. You can arrange bookmarks by dragging and dropping, and manage bookmark folders through the sidebar tree view.
@@ -463,38 +535,78 @@
             </div>
         </div>
 
-
     </main>
-    <footer class="py-20 md:py-24 m-auto">
+    <footer class="relative pt-32 pb-16 mt-16">
         <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
-            <div class="m-auto md:w-10/12 lg:w-8/12 xl:w-6/12">
-                <div class="flex flex-wrap items-center justify-between md:flex-nowrap">
-                    <div class="flex w-full justify-center space-x-24 text-gray-600 dark:text-gray-300 ">
-
-                        <ul role="list" class="flex space-x-6"> <!-- 添加 flex 类 -->
-                            <li>
-                                <a href="#" class="flex items-center space-x-3 transition hover:text-primary">
-                                    <img src="../icon-128.png" alt="Logo" class="h-6 w-6">
-                                    <span>TabMark - Bookmark New Tab</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://cooing-loganberry-b74.notion.site/TabMark-Bookmark-New-Tab-Product-Suggestions-14d1ee1c3b3a8063a82ef1b1bfc2e11e"
-                                    target="_blank" class="flex items-center space-x-3 transition hover:text-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5"
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z">
-                                        </path>
-                                    </svg>
-                                    <span>Feedback</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-
+            <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-3">
+                <!-- Product Links -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Product</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li>
+                            <a href="https://www.notion.so/Changelog-15b1ee1c3b3a80cb965fd3515e2d4fd2" 
+                               class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition">
+                                Changelog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cooing-loganberry-b74.notion.site/Tabmark-Roadmap-15b1ee1c3b3a8034a6c7d68abffd6e41" 
+                               class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition">
+                                Roadmap
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+
+                <!-- Support Links -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Support</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li>
+                            <a href="https://cooing-loganberry-b74.notion.site/Tutorial-for-Using-TabMark-Bookmark-New-Tab-14d1ee1c3b3a801684e0ffc4d44fed54?pvs=73" 
+                               class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition">
+                                Help Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cooing-loganberry-b74.notion.site/TabMark-Bookmark-New-Tab-Product-Suggestions-14d1ee1c3b3a8063a82ef1b1bfc2e11e" 
+                               class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition">
+                                Feedback
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Links -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Connect</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li>
+                            <a href="https://twitter.com/orionwange" 
+                               class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                                </svg>
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Alanrk/TabMark-Bookmark-New-Tab" 
+                               class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                                </svg>
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 mt-8 border-t border-gray-200 dark:border-gray-800">
+                <p class="text-center text-sm text-gray-600 dark:text-gray-400">
+                    © 2024 TabMark. All rights reserved.
+                </p>
             </div>
         </div>
     </footer>
@@ -507,6 +619,32 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
+<script>
+    function detectBrowserAndRedirect() {
+        // 检测 Edge 浏览器
+        const isEdge = navigator.userAgent.indexOf("Edg") != -1;
+
+        // 商店链接
+        const chromeStoreUrl = "https://chromewebstore.google.com/detail/tabmark-bookmark-new-tab/jpejneelbjckppjapemgfeheifljmaib";
+        const edgeStoreUrl = "https://microsoftedge.microsoft.com/addons/detail/gbndiacllfljcmojlfgookcdjkbcigmg";
+
+        // 根据浏览器类型跳转
+        if (isEdge) {
+            window.open(edgeStoreUrl, '_blank');
+        } else {
+            // 默认跳转到 Chrome 商店
+            window.open(chromeStoreUrl, '_blank');
+        }
+    }
+
+    // 页面加载时设置按钮文本
+    window.onload = function () {
+        const buttonText = document.getElementById('browser-button-text');
+        const isEdge = navigator.userAgent.indexOf("Edg") != -1;
+        buttonText.textContent = isEdge ? "Add to Edge" : "Add to Chrome";
+    }
+</script>
+
 
 </body>
 
