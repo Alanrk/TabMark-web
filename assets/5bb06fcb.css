@@ -121,3 +121,293 @@
 .pb-16{
     padding-bottom: 4rem;
 }
+/* 通用布局样式 */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 48px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        padding: 0 24px;
+    }
+}
+
+/* 区块间距 */
+.section {
+    padding: 80px 0;
+}
+
+.section-gray {
+    background-color: #f9fafb;
+}
+
+.dark .section-gray {
+    background-color: #111827;
+}
+
+/* 标题样式 */
+.section-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 16px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #6B7280;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.dark .section-title {
+    color: #ffffff;
+}
+
+.dark .section-subtitle {
+    color: #D1D5DB;
+}
+
+/* 网格布局 */
+.grid-3-cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.grid-4-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+@media (min-width: 768px) {
+    .grid-3-cols {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-4-cols {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* 卡片基础样式 */
+.card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark .card {
+    background-color: #1F2937;
+}
+
+/* 各个模块的间距 */
+.section+.section {
+    margin-top: 80px;
+}
+
+.notice-section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* 功能列表样式 */
+.feature-list {
+    margin-top: 16px;
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+    color: #4B5563;
+}
+
+.feature-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10B981;
+}
+
+/* 高亮卡片样式补充 */
+.highlight-card h4,
+.audience-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 16px 0 8px;
+    color: #111827;
+}
+
+/* 提示框内容样式补充 */
+.notice-desc {
+    margin-bottom: 24px;
+    color: #4B5563;
+}
+
+.notice-item {
+    margin-left: 12px;
+}
+
+.notice-item strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #111827;
+}
+
+.notice-item p {
+    color: #6B7280;
+    font-size: 14px;
+}
+
+/* 深色模式适配 */
+.dark .feature-list li {
+    color: #D1D5DB;
+}
+
+.dark .highlight-card h4,
+.dark .audience-card h4 {
+    color: #ffffff;
+}
+
+.dark .notice-item strong {
+    color: #ffffff;
+}
+
+.dark .notice-item p {
+    color: #D1D5DB;
+}
+
+/* 温馨提示样式 */
+.notice-box {
+    background-color: #FFFBEB;
+    border: 1px solid #FEF3C7;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.dark .notice-box {
+    background-color: rgba(31, 41, 55, 0.5);
+    border-color: #374151;
+}
+
+.notice-header {
+    margin-bottom: 32px;
+}
+
+.notice-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.notice-title h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.notice-desc {
+    color: #4B5563;
+    font-size: 16px;
+}
+
+.notice-items {
+    display: grid;
+    gap: 24px;
+}
+
+.notice-item {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.notice-item-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.notice-item-icon {
+    font-size: 20px;
+}
+
+.notice-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+}
+
+.notice-item p {
+    color: #6B7280;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* 深色模式适配 */
+.dark .notice-title h2 {
+    color: #FFFFFF;
+}
+
+.dark .notice-desc {
+    color: #D1D5DB;
+}
+
+.dark .notice-item {
+    background-color: rgba(31, 41, 55, 0.7);
+}
+
+.dark .notice-item h3 {
+    color: #FFFFFF;
+}
+
+.dark .notice-item p {
+    color: #D1D5DB;
+}
+
+/* 响应式布局 */
+@media (min-width: 768px) {
+    .notice-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .notice-box {
+        padding: 24px;
+    }
+    
+    .notice-item {
+        padding: 20px;
+    }
+}
+span.text-2xl.font-bold.text-gray-900.dark\:text-white.astro-HAP4XUPI {
+    font-size: 16px;
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="astro-BLV3VKFF">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="../../icon48.png">
+    <meta name="generator" content="Astro v1.9.2">
+    <meta name="description"
+        content="懒猫书签清理工具 - 一键清理重复书签、断开链接和空文件夹，让您的书签井井有条。支持Chrome和Edge浏览器，提供智能分析、隐私保护等功能。">
+    <meta name="keywords"
+        content="LazyCat, 懒猫书签清理, 书签清理工具, Chrome扩展, Edge扩展, 浏览器扩展, 书签管理, 重复书签清理, 断开链接检测, 空文件夹清理, 书签整理, 书签分析, 隐私保护, 浏览器工具">
+    <title>LazyCat 书签清理工具 - 让书签管理变得简单</title>
+
+    <!-- 复用原有的字体和样式引用 -->
+    <link rel="stylesheet" href="../../assets/5bb06fcb.css" />
+    
+    <!-- SEO meta tags -->
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="懒猫书签清理工具 - 让书签管理变得简单">
+    <meta property="og:description" content="一键清理重复书签、失效链接和空文件夹，让您的书签井井有条。智能分析功能助您轻松管理书签，确保隐私安全。">
+    <meta property="og:image" content="https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/screenshot2.jpg">
+    <meta property="og:url" content="https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/zh-cn/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+
+    <!-- Add Schema.org data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "懒猫书签清理工具",
+        "applicationCategory": "BrowserExtension",
+        "description": "一键清理重复书签、失效链接和空文件夹的Chrome扩展",
+        "operatingSystem": ["Chrome OS", "Windows", "macOS", "Linux"],
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "url": "https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/zh-cn/",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "100"
+        },
+        "featureList": [
+            "智能书签清理",
+            "书签分析报告",
+            "隐私保护",
+            "双语支持",
+            "实时反馈"
+        ],
+        "screenshot": "https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/screenshot2.jpg"
+    }
+    </script>
+
+    <!-- FAQ 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "如何清理重复书签？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "只需点击清理按钮，工具会自动检测并列出重复的书签，您可以选择要保留的版本进行清理。"
+            }
+        }, {
+            "@type": "Question",
+            "name": "是否会删除重要书签？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "不会。清理前会显示预览，您可以确认后再进行删除。同时建议提前备份重要书签。"
+            }
+        }, {
+            "@type": "Question",
+            "name": "支持哪些浏览器？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "目前支持 Chrome 和 Edge 浏览器，后续会支持更多主流浏览器。"
+            }
+        }]
+    }
+    </script>
+
+    <!-- Twitter 卡片 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="懒猫书签清理工具 - 让书签管理变得简单">
+    <meta name="twitter:description" content="一键清理重复书签、失效链接和空文件夹，让您的书签井井有条。智能分析功能助您轻松管理书签，确保隐私安全。">
+    <meta name="twitter:image" content="https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/screenshot2.jpg">
+    
+    <!-- 语言和地区设置 -->
+    <meta http-equiv="content-language" content="zh-CN">
+    
+    <!-- 规范链接 -->
+    <link rel="canonical" href="https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/zh-cn/">
+    <link rel="alternate" hreflang="en" href="https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/en/">
+    <link rel="alternate" hreflang="zh-CN" href="https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/zh-cn/">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-21ZMLLTMMH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-21ZMLLTMMH');
+    </script>
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+<header class="astro-HAP4XUPI">
+    <nav class="absolute z-10 w-full border-b border-black/5 dark:border-white/5 lg:border-transparent astro-HAP4XUPI">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+            <div
+                class="relative flex flex-wrap items-center justify-between gap-6 py-8 md:gap-0 md:py-8 astro-HAP4XUPI">
+                <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max astro-HAP4XUPI">
+                    <a href="/#home" aria-label="logo" class="flex items-center space-x-2 astro-HAP4XUPI">
+                        <div aria-hidden="true" class="flex space-x-1 astro-HAP4XUPI">
+                            <img src="../../icon48.png" alt="Logo" class="h-6 w-6 astro-HAP4XUPI">
+                        </div>
+
+                        <span class="text-2xl font-bold text-gray-900 dark:text-white astro-HAP4XUPI">懒猫书签清理</span>
+                    </a>
+
+                    <div class="relative flex max-h-10 items-center lg:hidden astro-HAP4XUPI">
+                        <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 astro-HAP4XUPI">
+                            <div aria-hidden="true" id="line"
+                                class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300 astro-HAP4XUPI">
+                            </div>
+                            <div aria-hidden="true" id="line2"
+                                class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300 astro-HAP4XUPI">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div id="navLayer" aria-hidden="true"
+                    class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-gray-900/70 lg:hidden astro-HAP4XUPI">
+                </div>
+                <div id="navlinks"
+                    class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none astro-HAP4XUPI">
+                    <div class="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0 astro-HAP4XUPI">
+                        <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-sm astro-HAP4XUPI">
+                            <li class="astro-HAP4XUPI">
+                                <a href="#section-header"
+                                    class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                    <span class="astro-HAP4XUPI">功能特点</span>
+                                </a>
+                            </li>
+
+                            <li class="astro-HAP4XUPI">
+                                <a href="https://cooing-loganberry-b74.notion.site/TabMark-Bookmark-New-Tab-Product-Suggestions-14d1ee1c3b3a8063a82ef1b1bfc2e11e"
+                                    target="_blank"
+                                    class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                    <span class="astro-HAP4XUPI">反馈建议</span>
+                                </a>
+                            </li>
+
+                            <li class="astro-HAP4XUPI">
+                                <a href="../../zh-cn/index.html" target="_blank"
+                                    class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                    <span class="astro-HAP4XUPI">书签新标签页</span>
+                                </a>
+                            </li>
+                            <li class="astro-HAP4XUPI"></li>
+                                <a href="../en/index.html"
+                                    class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                    <span class="astro-HAP4XUPI">English</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main class="space-y-32 py-24">
+        <div class="relative" id="home">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="relative pt-36 ml-auto">
+                    <div class="lg:w-2/3 text-center mx-auto">
+                        <h1 class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">
+                            让书签管理<span class="text-primary dark:text-white">更轻松</span>
+                        </h1>
+                        <p class="mt-8 text-gray-700 dark:text-gray-300">
+                            LazyCat 书签清理工具帮助您一键清理重复书签、断开链接和空文件夹，让书签管理变得简单高效。支持 Chrome 和 Edge 浏览器。
+                        </p>
+                        <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+                            <a href="javascript:void(0)" onclick="detectBrowserAndRedirect()"
+                                class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+                                <span id="browser-button-text" class="relative text-base font-semibold text-white">添加到浏览器</span>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="../../screenshot2.jpg" alt="screenshot" class="mt-16 mx-auto shadow-xl">
+                </div>
+            </div>
+        </div>
+
+        <!-- 核心功能部分 -->
+        <div class="section section-gray">
+            <div class="container">
+                <div class="section-header" id="section-header">
+                    <h2 class="section-title">核心功能</h2>
+                    <p class="section-subtitle">简单高效的书签管理工具，让整理变得轻松愉快</p>
+                </div>
+
+                <div class="grid-3-cols">
+                    <div class="card feature-card">
+                        <div class="accent-bar"></div>
+                        <div class="feature-icon">🧹</div>
+                        <h3>智能书签清理</h3>
+                        <ul class="feature-list">
+                            <li>自动检测失效链接</li>
+                            <li>识别并清理空文件夹</li>
+                            <li>批量处理重复书签</li>
+                            <li>清理前预览确认</li>
+                            <li>一键恢复整洁书签</li>
+                        </ul>
+                    </div>
+
+                    <div class="card feature-card">
+                        <div class="accent-bar"></div>
+                        <div class="feature-icon">📊</div>
+                        <h3>书签分析报告</h3>
+                        <ul class="feature-list">
+                            <li>可视化使用数据</li>
+                            <li>书签分类统计</li>
+                            <li>访问频率分析</li>
+                            <li>文件夹深度检测</li>
+                            <li>个性化整理建议</li>
+                        </ul>
+                    </div>
+
+                    <div class="card feature-card">
+                        <div class="accent-bar"></div>
+                        <div class="feature-icon">🛡️</div>
+                        <h3>隐私保护</h3>
+                        <ul class="feature-list">
+                            <li>100% 本地运行</li>
+                            <li>无需网络连接</li>
+                            <li>不收集个人数据</li>
+                            <li>不上传书签信息</li>
+                            <li>完全开源可信赖</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 特色亮点 -->
+        <div class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">特色亮点</h2>
+                    <p class="section-subtitle">让书签整理变得轻松有趣</p>
+                </div>
+                <div class="grid-4-cols">
+                    <div class="card highlight-card">
+                        <div class="highlight-icon">😺</div>
+                        <h4>可爱助手</h4>
+                        <p class="highlight-text">萌趣的猫咪助手陪伴你完成整理，让枯燥的清理过程变得有趣</p>
+                    </div>
+
+                    <div class="card highlight-card">
+                        <div class="highlight-icon">✨</div>
+                        <h4>简约设计</h4>
+                        <p class="highlight-text">清爽简约的界面设计，操作直观，使用便捷</p>
+                    </div>
+
+                    <div class="card highlight-card">
+                        <div class="highlight-icon">🌏</div>
+                        <h4>双语支持</h4>
+                        <p class="highlight-text">完整的中英文双语界面，无障碍使用体验</p>
+                    </div>
+
+                    <div class="card highlight-card">
+                        <div class="highlight-icon">⏳</div>
+                        <h4>实时反馈</h4>
+                        <p class="highlight-text">清理进度实时展示，操作过程清晰透明</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 适合人群 -->
+        <div class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">适合人群</h2>
+                    <p class="section-subtitle">为不同需求的用户提供贴心服务</p>
+                </div>
+                <div class="grid-4-cols">
+                    <div class="card audience-card">
+                        <div class="audience-icon">📚</div>
+                        <h4>书签收藏达人</h4>
+                        <p class="audience-text">经常收藏网页，书签数量庞大需要整理的用户</p>
+                    </div>
+
+                    <div class="card audience-card">
+                        <div class="audience-icon">🎯</div>
+                        <h4>数字整理控</h4>
+                        <p class="audience-text">热衷于保持数字生活整洁有序的完美主义者</p>
+                    </div>
+
+                    <div class="card audience-card">
+                        <div class="audience-icon">🧹</div>
+                        <h4>浏览器清洁工</h4>
+                        <p class="audience-text">定期清理浏览器，保持工作环境整洁的用户</p>
+                    </div>
+
+                    <div class="card audience-card">
+                        <div class="audience-icon">⚡</div>
+                        <h4>效率工具爱好者</h4>
+                        <p class="audience-text">追求高效工作方式，喜欢优质工具的用户</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 温馨提示 -->
+        <div class="notice-section">
+            <div class="container">
+                <div class="notice-box">
+                    <div class="notice-header">
+                        <div class="notice-title">
+                            <span class="notice-icon">⚠️</span>
+                            <h2>温馨提示</h2>
+                        </div>
+                        <p class="notice-desc">为确保您的书签数据安全，请注意以下事项：</p>
+                    </div>
+                    
+                    <div class="notice-items">
+                        <div class="notice-item">
+                            <div class="notice-item-header">
+                                <span class="notice-item-icon">🔍</span>
+                                <h3>确认书签状态</h3>
+                            </div>
+                            <p>删除前仔细检查待清理的书签，避免误删重要内容</p>
+                        </div>
+
+                        <div class="notice-item">
+                            <div class="notice-item-header">
+                                <span class="notice-item-icon">💾</span>
+                                <h3>备份重要数据</h3>
+                            </div>
+                            <p>处理大量书签前，建议先导出备份重要的书签数据</p>
+                        </div>
+
+                        <div class="notice-item">
+                            <div class="notice-item-header">
+                                <span class="notice-item-icon">📝</span>
+                                <h3>分批次整理</h3>
+                            </div>
+                            <p>数量较多时建议分多次进行，每次处理适量书签</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="relative pt-32 pb-16 mt-16">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+            <div class="pt-8 mt-8 border-t border-gray-200 dark:border-gray-800">
+                <p class="text-center text-sm text-gray-600 dark:text-gray-400">
+                    © 2024 LazyCat. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function detectBrowserAndRedirect() {
+            const isEdge = navigator.userAgent.indexOf("Edg") != -1;
+            const chromeStoreUrl = "https://chromewebstore.google.com/detail/lazycat-bookmark-cleaner/YOUR_CHROME_ID";
+            const edgeStoreUrl = "https://microsoftedge.microsoft.com/addons/detail/YOUR_EDGE_ID";
+            
+            if (isEdge) {
+                window.open(edgeStoreUrl, '_blank');
+            } else {
+                window.open(chromeStoreUrl, '_blank');
+            }
+        }
+
+        window.onload = function() {
+            const buttonText = document.getElementById('browser-button-text');
+            const isEdge = navigator.userAgent.indexOf("Edg") != -1;
+            buttonText.textContent = isEdge ? "添加到 Edge" : "添加到 Chrome";
+        }
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?8218fb8ffd99006651cb31db11220969";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+</html> 
