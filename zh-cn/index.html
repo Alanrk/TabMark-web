@@ -206,17 +206,20 @@
                     TabMark 将收藏夹变成新标签页，让你收藏的书签一目了然、整洁高效，快速直达你最需要的网站和资源。搭配智能 AI 搜索，更快找到你想要的答案。支持 Chrome 和 Edge。
                 </p>
                 <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-                    <a href="javascript:void(0)" 
-                       onclick="detectBrowserAndRedirect()"
+                      <button 
+                      onclick="detectBrowserAndRedirect()"
                        class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
                       <span id="browser-button-text" class="relative text-base font-semibold text-white">添加到浏览器</span>
-                    </a>
+                    </button>
                     <a href="https://cooing-loganberry-b74.notion.site/TabMark - Bookmark New Tab-6499df3aa1c54620805e378d3b0f809c" target="_blank" class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max">
                       <span class="relative text-base font-semibold text-primary dark:text-white">下载安装包</span>
                     </a>
                 </div>
             </div>
-            <img src="../screenshot1.png" alt="TabMark插件界面预览" class="mt-16 mx-auto shadow-xl" style="width:1232px; height: 804px;">
+            <img src="../screenshot1.png" 
+                 alt="TabMark插件界面预览" 
+                 class="mt-16 mx-auto shadow-xl w-full max-w-[1232px] h-auto" 
+                 loading="lazy">
         </div>
 </div>
 </div>
@@ -579,16 +582,4 @@
         </div>
     </div>
 </footer>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?8218fb8ffd99006651cb31db11220969";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-
-
 </body></html>

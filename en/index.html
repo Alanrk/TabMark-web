@@ -305,13 +305,17 @@
                             TabMark turns your bookmarks into a new tab page, making your saved bookmarks clear, tidy, and efficient, allowing you to quickly reach the websites and resources you need most. Paired with intelligent AI search, find the answers you want faster. Supports Chrome and Edge.
                         </p>
                         <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-                            <a href="javascript:void(0)" onclick="detectBrowserAndRedirect()"
+                            <button 
+                                onclick="detectBrowserAndRedirect()"
                                 class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
                                 <span id="browser-button-text" class="relative text-base font-semibold text-white">Add to Browser</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
-                    <img src="../screenshot1.png" alt="scri" class="mt-16 mx-auto shadow-xl" style="width:1232px; height: 804px;">
+                    <img src="../screenshot1.png" 
+                         alt="scri" 
+                         class="mt-16 mx-auto shadow-xl w-full max-w-[1232px] h-auto" 
+                         loading="lazy">
                 </div>
             </div>
         </div>
@@ -704,17 +708,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?8218fb8ffd99006651cb31db11220969";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-
-
 </body>
 
 </html>
