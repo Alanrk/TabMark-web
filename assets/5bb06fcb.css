@@ -526,3 +526,12 @@ footer {
     white-space: nowrap;
     border-width: 0;
 }
+img {
+    background-color: #f3f4f6;
+    /* 图片加载前的背景色 */
+}
+
+.dark img {
+    background-color: #1f2937;
+    /* 暗色模式下图片加载前的背景色 */
+}
