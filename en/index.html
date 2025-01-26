@@ -181,6 +181,32 @@
         ]
     }
     </script>
+    <script>
+        function detectBrowserAndRedirect() {
+            // 检测 Edge 浏览器
+            const isEdge = navigator.userAgent.indexOf("Edg") != -1;
+
+            // 商店链接
+            const chromeStoreUrl = "https://chromewebstore.google.com/detail/tabmark-bookmark-new-tab/jpejneelbjckppjapemgfeheifljmaib";
+            const edgeStoreUrl = "https://microsoftedge.microsoft.com/addons/detail/tabmarkbookmark-new-tab/gbndiacllfljcmojlfgookcdjkbcigmg";
+
+            // 根据浏览器类型跳转
+            if (isEdge) {
+                window.open(edgeStoreUrl, '_blank');
+            } else {
+                // 默认跳转到 Chrome 商店
+                window.open(chromeStoreUrl, '_blank');
+            }
+        }
+
+        // 页面加载时设置按钮文本
+        window.onload = function () {
+            const buttonText = document.getElementById('browser-button-text');
+            const isEdge = navigator.userAgent.indexOf("Edg") != -1;
+            buttonText.textContent = isEdge ? "Add to Edge" : "Add to Chrome";
+        }
+    </script>
+
 </head>
 
 <body class="bg-white dark:bg-gray-900 astro-BLV3VKFF">
@@ -285,7 +311,7 @@
                             </a>
                         </div>
                     </div>
-                    <img src="../screenshot1.png" alt="scri" class="mt-16 mx-auto shadow-xl">
+                    <img src="../screenshot1.png" alt="scri" class="mt-16 mx-auto shadow-xl" style="width:1232px; height: 804px;">
                 </div>
             </div>
         </div>
@@ -687,31 +713,6 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
-<script>
-    function detectBrowserAndRedirect() {
-        // 检测 Edge 浏览器
-        const isEdge = navigator.userAgent.indexOf("Edg") != -1;
-
-        // 商店链接
-        const chromeStoreUrl = "https://chromewebstore.google.com/detail/tabmark-bookmark-new-tab/jpejneelbjckppjapemgfeheifljmaib";
-        const edgeStoreUrl = "https://microsoftedge.microsoft.com/addons/detail/tabmarkbookmark-new-tab/gbndiacllfljcmojlfgookcdjkbcigmg";
-
-        // 根据浏览器类型跳转
-        if (isEdge) {
-            window.open(edgeStoreUrl, '_blank');
-        } else {
-            // 默认跳转到 Chrome 商店
-            window.open(chromeStoreUrl, '_blank');
-        }
-    }
-
-    // 页面加载时设置按钮文本
-    window.onload = function () {
-        const buttonText = document.getElementById('browser-button-text');
-        const isEdge = navigator.userAgent.indexOf("Edg") != -1;
-        buttonText.textContent = isEdge ? "Add to Edge" : "Add to Chrome";
-    }
-</script>
 
 
 </body>

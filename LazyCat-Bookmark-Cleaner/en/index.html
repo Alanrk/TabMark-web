@@ -125,6 +125,25 @@
 
         gtag('config', 'G-21ZMLLTMMH');
     </script>
+    <script>
+        function detectBrowserAndRedirect() {
+            const isEdge = navigator.userAgent.indexOf("Edg") != -1;
+            const chromeStoreUrl = "https://chromewebstore.google.com/detail/lazycat-bookmark-cleaner/aeehapalakdoclgmfeondmephgiandef";
+            const edgeStoreUrl = "https://chromewebstore.google.com/detail/lazycat-bookmark-cleaner/aeehapalakdoclgmfeondmephgiandef";
+
+            if (isEdge) {
+                window.open(edgeStoreUrl, '_blank');
+            } else {
+                window.open(chromeStoreUrl, '_blank');
+            }
+        }
+
+        window.onload = function () {
+            const buttonText = document.getElementById('browser-button-text');
+            const isEdge = navigator.userAgent.indexOf("Edg") != -1;
+            buttonText.textContent = isEdge ? "添加到 Edge" : "添加到 Chrome";
+        }
+    </script>
 </head>
 
 <body class="bg-white dark:bg-gray-900">
@@ -219,7 +238,7 @@
                         </a>
                     </div>
                 </div>
-                <img src="../../screenshot2.png" alt="LazyCat Screenshot" class="mt-16 mx-auto shadow-xl">
+                <img src="../../screenshot2.png" alt="LazyCat Screenshot" class="mt-16 mx-auto shadow-xl" style="width:1232px; height: 710px;">
             </div>
         </div>
     </div>
@@ -533,25 +552,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        function detectBrowserAndRedirect() {
-            const isEdge = navigator.userAgent.indexOf("Edg") != -1;
-            const chromeStoreUrl = "https://chromewebstore.google.com/detail/lazycat-bookmark-cleaner/aeehapalakdoclgmfeondmephgiandef";
-            const edgeStoreUrl = "https://chromewebstore.google.com/detail/lazycat-bookmark-cleaner/aeehapalakdoclgmfeondmephgiandef";
-            
-            if (isEdge) {
-                window.open(edgeStoreUrl, '_blank');
-            } else {
-                window.open(chromeStoreUrl, '_blank');
-            }
-        }
 
-        window.onload = function() {
-            const buttonText = document.getElementById('browser-button-text');
-            const isEdge = navigator.userAgent.indexOf("Edg") != -1;
-            buttonText.textContent = isEdge ? "Add to Edge" : "Add to Chrome";
-        }
-    </script>
     <script>
         var _hmt = _hmt || [];
         (function () {
