@@ -9,7 +9,7 @@
     <meta name="description"
         content="LazyCat Bookmark Cleaner - Smart browser extension to clean broken bookmarks, duplicate bookmarks and empty folders. Features privacy protection and real-time analysis.">
     <meta name="keywords"
-        content="LazyCat, bookmark cleaner, Chrome extension, Edge extension, browser extension, bookmark management, duplicate bookmarks, broken links, empty folders, bookmark organization, privacy protection">
+        content="LazyCat, bookmark cleaner, bookmark cleanup tool, broken bookmark cleaner, duplicate bookmark finder, bookmark manager, Chrome extension, Edge extension, browser extension, bookmark organization, bookmark analysis, broken link detector, empty folder cleaner, bookmark statistics, browser tool, bookmark sorting, bookmark maintenance, bookmark management tool, browser productivity">
     <title>LazyCat Bookmark Cleaner - Clean Your Bookmarks Effortlessly</title>
 
     <link rel="stylesheet" href="../../assets/5bb06fcb.css" />
@@ -54,17 +54,38 @@
     }
     </script>
 
-    <!-- FAQ 结构化数据 -->
+    <!-- FAQ Schema.org data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [{
             "@type": "Question",
+            "name": "How to clean broken bookmark links?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "After installing LazyCat Bookmark Cleaner, click its icon in the toolbar. The system will automatically scan your bookmarks and identify broken links. You can select which bookmarks to clean, confirm your selection, and click delete to complete the cleanup."
+            }
+        }, {
+            "@type": "Question",
             "name": "How to clean duplicate bookmarks?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Simply click the clean button, and the tool will automatically detect and list duplicate bookmarks. You can choose which version to keep."
+                "text": "After installing LazyCat Bookmark Cleaner, click its icon in the toolbar. The system will automatically scan your bookmarks and identify duplicates. You can select which bookmarks to keep, confirm your selection, and click delete to complete the cleanup."
+            }
+        }, {
+            "@type": "Question",
+            "name": "How to view bookmark statistics?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "After installing LazyCat Bookmark Cleaner, click its icon in the toolbar. Click the 'Bookmark Analysis' button on the page to view your bookmark statistics."
+            }
+        }, {
+            "@type": "Question",
+            "name": "Which browsers are supported?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Currently supports Chrome and Edge browsers."
             }
         }, {
             "@type": "Question",
@@ -72,13 +93,6 @@
             "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "No. You'll see a preview before deletion, and we recommend backing up important bookmarks first."
-            }
-        }, {
-            "@type": "Question",
-            "name": "Which browsers are supported?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Currently supports Chrome and Edge browsers, with more browsers planned for future updates."
             }
         }]
     }
@@ -186,6 +200,7 @@
 </header>
 
 <main class="space-y-32 py-24">
+    <!-- 1. Hero Section -->
     <div class="relative" id="home">
         <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
             <div class="relative pt-36 ml-auto">
@@ -209,168 +224,281 @@
         </div>
     </div>
 
-        <!-- Core Features -->
-        <div class="section section-gray" id="features">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Core Features</h2>
-                    <p class="section-subtitle">Simple and efficient bookmark management tools to make organization enjoyable</p>
+    <!-- 2. Core Features -->
+    <div class="section section-white" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Features</h2>
+                <p class="section-subtitle">Simple and efficient bookmark management tools to make organization enjoyable</p>
+            </div>
+
+            <div class="grid-3-cols">
+                <div class="card feature-card">
+                    <div class="accent-bar"></div>
+                    <div class="feature-icon">🧹</div>
+                    <h3>Smart Cleanup</h3>
+                    <ul class="feature-list">
+                        <li>Auto-detect broken bookmarks、duplicates bookmarks</li>
+                        <li>Identify empty folders</li>
+                        <li>Batch process broken bookmarks、duplicates bookmarks</li>
+                        <li>Preview before cleaning</li>
+                        <li>One-click restoration</li>
+                    </ul>
                 </div>
 
-                <div class="grid-3-cols">
-                    <div class="card feature-card">
-                        <div class="accent-bar"></div>
-                        <div class="feature-icon">🧹</div>
-                        <h3>Smart Cleanup</h3>
-                        <ul class="feature-list">
-                            <li>Auto-detect broken bookmarks、duplicates bookmarks</li>
-                            <li>Identify empty folders</li>
-                            <li>Batch process broken bookmarks、duplicates bookmarks</li>
-                            <li>Preview before cleaning</li>
-                            <li>One-click restoration</li>
-                        </ul>
-                    </div>
+                <div class="card feature-card">
+                    <div class="accent-bar"></div>
+                    <div class="feature-icon">📊</div>
+                    <h3>Bookmark Analysis</h3>
+                    <ul class="feature-list">
+                        <li>Visual usage data</li>
+                        <li>Bookmark statistics</li>
+                        <li>Access frequency analysis</li>
+                        <li>Folder depth detection</li>
+                        <li>Personalized suggestions</li>
+                    </ul>
+                </div>
 
-                    <div class="card feature-card">
-                        <div class="accent-bar"></div>
-                        <div class="feature-icon">📊</div>
-                        <h3>Bookmark Analysis</h3>
-                        <ul class="feature-list">
-                            <li>Visual usage data</li>
-                            <li>Bookmark statistics</li>
-                            <li>Access frequency analysis</li>
-                            <li>Folder depth detection</li>
-                            <li>Personalized suggestions</li>
-                        </ul>
-                    </div>
+                <div class="card feature-card">
+                    <div class="accent-bar"></div>
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Privacy Protection</h3>
+                    <ul class="feature-list">
+                        <li>100% local operation</li>
+                        <li>No data upload</li>
+                        <li>No personal data collection</li>
+                        <li>No bookmark uploading</li>
+                        <li>Fully open source</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <div class="card feature-card">
-                        <div class="accent-bar"></div>
-                        <div class="feature-icon">🛡️</div>
-                        <h3>Privacy Protection</h3>
-                        <ul class="feature-list">
-                            <li>100% local operation</li>
-                            <li>No data upload</li>
-                            <li>No personal data collection</li>
-                            <li>No bookmark uploading</li>
-                            <li>Fully open source</li>
-                        </ul>
+    <!-- 3. User Reviews -->
+    <div id="testimonials" class="section-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+            <div class="md:w-2/3 lg:w-1/2 mx-auto text-center">
+                <div class="flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-secondary">
+                        <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h2 class="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                    User Reviews
+                </h2>
+            </div>
+            
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-16">
+                <div class="testimonial-item">
+                    <img src="../../images/avatars/avatars-1.jpg" alt="User Avatar" class="user-avatar">
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <div class="user-name">John D.</div>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        "Very useful tool! Helped me clean up tons of invalid bookmarks and saved me a lot of time. Simple interface and easy to use. Highly recommended!"
+                    </p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="../../images/avatars/avatars-2.jpg" alt="User Avatar" class="user-avatar">
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <div class="user-name">Sarah M.</div>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        "One-click cleanup for broken links is super convenient. The duplicate bookmark detection is great, and the bookmark analysis feature is surprisingly insightful!"
+                    </p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="../../images/avatars/avatars-3.jpg" alt="User Avatar" class="user-avatar">
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <div class="user-name">Mike R.</div>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        "Love the cute interface design, makes cleaning bookmarks enjoyable. Most importantly, it fully protects privacy and doesn't collect personal data. Awesome!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Key Highlights -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Highlights</h2>
+                <p class="section-subtitle">Making bookmark organization fun and easy</p>
+            </div>
+            <div class="grid-4-cols">
+                <div class="card highlight-card">
+                    <div class="highlight-icon">😺</div>
+                    <h4>Cute Assistant</h4>
+                    <p class="highlight-text">A friendly cat assistant makes the cleaning process more enjoyable</p>
+                </div>
+
+                <div class="card highlight-card">
+                    <div class="highlight-icon">✨</div>
+                    <h4>Clean Design</h4>
+                    <p class="highlight-text">Intuitive interface with minimalist design for easy operation</p>
+                </div>
+
+                <div class="card highlight-card">
+                    <div class="highlight-icon">🌏</div>
+                    <h4>Bilingual Support</h4>
+                    <p class="highlight-text">Full English and Chinese interface for global users</p>
+                </div>
+
+                <div class="card highlight-card">
+                    <div class="highlight-icon">⏳</div>
+                    <h4>Real-time Feedback</h4>
+                    <p class="highlight-text">Clear progress display for transparent operations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. FAQ Section -->
+    <div class="relative py-16" id="faq">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+            <div class="md:w-2/3 lg:w-1/2 mx-auto text-center mb-16">
+                <div class="flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-secondary">
+                        <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h2 class="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            How to clean broken bookmark links?
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            After installing LazyCat Bookmark Cleaner, click its icon in the toolbar. The system will automatically scan your bookmarks and identify broken links. You can select which bookmarks to clean, confirm your selection, and click delete to complete the cleanup.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            How to clean duplicate bookmarks?
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            After installing LazyCat Bookmark Cleaner, click its icon in the toolbar. The system will automatically scan your bookmarks and identify duplicates. You can select which bookmarks to keep, confirm your selection, and click delete to complete the cleanup.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            How to view bookmark statistics?
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            After installing LazyCat Bookmark Cleaner, click its icon in the toolbar. Click the 'Bookmark Analysis' button on the page to view your bookmark statistics.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Which browsers are supported?
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            Currently supports Chrome and Edge browsers.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Highlights -->
-        <div class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Key Highlights</h2>
-                    <p class="section-subtitle">Making bookmark organization fun and easy</p>
+    <!-- 6. Perfect For -->
+    <div class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perfect For</h2>
+                <p class="section-subtitle">Tailored solutions for different user needs</p>
+            </div>
+            <div class="grid-4-cols">
+                <div class="card audience-card">
+                    <div class="audience-icon">📚</div>
+                    <h4>Bookmark Collectors</h4>
+                    <p class="audience-text">Users with extensive bookmark collections needing organization</p>
                 </div>
-                <div class="grid-4-cols">
-                    <div class="card highlight-card">
-                        <div class="highlight-icon">😺</div>
-                        <h4>Cute Assistant</h4>
-                        <p class="highlight-text">A friendly cat assistant makes the cleaning process more enjoyable</p>
+
+                <div class="card audience-card">
+                    <div class="audience-icon">🎯</div>
+                    <h4>Digital Organizers</h4>
+                    <p class="audience-text">Perfectionists who love keeping their digital life tidy</p>
+                </div>
+
+                <div class="card audience-card">
+                    <div class="audience-icon">🧹</div>
+                    <h4>Browser Cleaners</h4>
+                    <p class="audience-text">Users who regularly maintain their browser environment</p>
+                </div>
+
+                <div class="card audience-card">
+                    <div class="audience-icon">⚡</div>
+                    <h4>Efficiency Enthusiasts</h4>
+                    <p class="audience-text">Those who value high-quality productivity tools</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. Important Notice -->
+    <div class="notice-section">
+        <div class="container">
+            <div class="notice-box">
+                <div class="notice-header">
+                    <div class="notice-title">
+                        <span class="notice-icon">⚠️</span>
+                        <h2>Important Notice</h2>
+                    </div>
+                    <p class="notice-desc">To ensure the safety of your bookmark data, please note:</p>
+                </div>
+                
+                <div class="notice-items">
+                    <div class="notice-item">
+                        <div class="notice-item-header">
+                            <span class="notice-item-icon">🔍</span>
+                            <h3>Verify Bookmarks</h3>
+                        </div>
+                        <p>Carefully check bookmarks before deletion to avoid removing important content</p>
                     </div>
 
-                    <div class="card highlight-card">
-                        <div class="highlight-icon">✨</div>
-                        <h4>Clean Design</h4>
-                        <p class="highlight-text">Intuitive interface with minimalist design for easy operation</p>
+                    <div class="notice-item">
+                        <div class="notice-item-header">
+                            <span class="notice-item-icon">💾</span>
+                            <h3>Backup Data</h3>
+                        </div>
+                        <p>Export important bookmarks before processing large amounts of data</p>
                     </div>
 
-                    <div class="card highlight-card">
-                        <div class="highlight-icon">🌏</div>
-                        <h4>Bilingual Support</h4>
-                        <p class="highlight-text">Full English and Chinese interface for global users</p>
-                    </div>
-
-                    <div class="card highlight-card">
-                        <div class="highlight-icon">⏳</div>
-                        <h4>Real-time Feedback</h4>
-                        <p class="highlight-text">Clear progress display for transparent operations</p>
+                    <div class="notice-item">
+                        <div class="notice-item-header">
+                            <span class="notice-item-icon">📝</span>
+                            <h3>Batch Processing</h3>
+                        </div>
+                        <p>Process large collections in smaller batches for better control</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Target Users -->
-        <div class="section section-gray">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Perfect For</h2>
-                    <p class="section-subtitle">Tailored solutions for different user needs</p>
-                </div>
-                <div class="grid-4-cols">
-                    <div class="card audience-card">
-                        <div class="audience-icon">📚</div>
-                        <h4>Bookmark Collectors</h4>
-                        <p class="audience-text">Users with extensive bookmark collections needing organization</p>
-                    </div>
-
-                    <div class="card audience-card">
-                        <div class="audience-icon">🎯</div>
-                        <h4>Digital Organizers</h4>
-                        <p class="audience-text">Perfectionists who love keeping their digital life tidy</p>
-                    </div>
-
-                    <div class="card audience-card">
-                        <div class="audience-icon">🧹</div>
-                        <h4>Browser Cleaners</h4>
-                        <p class="audience-text">Users who regularly maintain their browser environment</p>
-                    </div>
-
-                    <div class="card audience-card">
-                        <div class="audience-icon">⚡</div>
-                        <h4>Efficiency Enthusiasts</h4>
-                        <p class="audience-text">Those who value high-quality productivity tools</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Important Notice -->
-        <div class="notice-section">
-            <div class="container">
-                <div class="notice-box">
-                    <div class="notice-header">
-                        <div class="notice-title">
-                            <span class="notice-icon">⚠️</span>
-                            <h2>Important Notice</h2>
-                        </div>
-                        <p class="notice-desc">To ensure the safety of your bookmark data, please note:</p>
-                    </div>
-                    
-                    <div class="notice-items">
-                        <div class="notice-item">
-                            <div class="notice-item-header">
-                                <span class="notice-item-icon">🔍</span>
-                                <h3>Verify Bookmarks</h3>
-                            </div>
-                            <p>Carefully check bookmarks before deletion to avoid removing important content</p>
-                        </div>
-
-                        <div class="notice-item">
-                            <div class="notice-item-header">
-                                <span class="notice-item-icon">💾</span>
-                                <h3>Backup Data</h3>
-                            </div>
-                            <p>Export important bookmarks before processing large amounts of data</p>
-                        </div>
-
-                        <div class="notice-item">
-                            <div class="notice-item-header">
-                                <span class="notice-item-icon">📝</span>
-                                <h3>Batch Processing</h3>
-                            </div>
-                            <p>Process large collections in smaller batches for better control</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+    </div>
+</main>
     <footer class="relative pt-32 pb-16 mt-16">
         <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
             <div class="pt-8 mt-8 border-t border-gray-200 dark:border-gray-800">

@@ -9,15 +9,15 @@
     <meta name="description"
         content="懒猫书签清理工具 - 一键清理失效书签，重复书签和空文件夹，让您的书签井井有条。支持Chrome和Edge浏览器，提供智能分析、隐私保护等功能。">
     <meta name="keywords"
-        content="LazyCat, 懒猫书签清理, 书签清理工具, Chrome扩展, Edge扩展, 浏览器扩展, 书签管理, 重复书签清理, 断开链接检测, 空文件夹清理, 书签整理, 书签分析, 隐私保护, 浏览器工具">
-    <title>懒猫书签清理工具 - 让书签管理变得简单</title>
+        content="LazyCat, 懒猫书签清理, 懒猫书签清理官方网站，清理失效书签，清理重复书签，失效书签清理，书签使用统计，书签清理工具, Chrome扩展, Edge扩展, 浏览器扩展, 书签管理, 重复书签清理, 断开链接检测, 空文件夹清理, 书签整理, 书签分析, 浏览器工具">
+    <title>懒猫书签清理工具 - 让书签管理更轻松</title>
 
     <!-- 复用原有的字体和样式引用 -->
     <link rel="stylesheet" href="../../assets/5bb06fcb.css" />
     
     <!-- SEO meta tags -->
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="懒猫书签清理工具 - 让书签管理变得简单">
+    <meta property="og:title" content="懒猫书签清理工具 - 让书签管理更轻松">
     <meta property="og:description" content="一键清理失效书签、重复书签和空文件夹，让您的书签井井有条。智能分析功能助您轻松管理书签，确保隐私安全。">
     <meta property="og:image" content="https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/ogimage_zh.png">
     <meta property="og:url" content="https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/zh-cn/">
@@ -62,24 +62,31 @@
         "@type": "FAQPage",
         "mainEntity": [{
             "@type": "Question",
-            "name": "如何清理重复书签？",
+            "name": "如何清理浏览器的失效书签链接？",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "只需点击清理按钮，工具会自动检测并列出重复的书签，您可以选择要保留的版本进行清理。"
+                "text": "在浏览器中安装懒猫书签清理拓展后，点击工具栏懒猫书签清理的图标，系统会自动扫描您的书签，识别失效链接，您可以选择需要清理的书签进行二次确认，然后点击删除按钮后，即可完成清理。"
             }
         }, {
             "@type": "Question",
-            "name": "是否会删除重要书签？",
+            "name": "如何清理浏览器的重复书签？",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "不会。清理前会显示预览，您可以确认后再进行删除。同时建议提前备份重要书签。"
+                "text": "在浏览器中安装懒猫书签清理拓展后，点击工具栏懒猫书签清理的图标，系统会自动扫描您的书签，识别重复书签，您可以选择需要清理的书签进行二次确认，然后点击删除按钮后，即可完成清理。"
+            }
+        }, {
+            "@type": "Question",
+            "name": "如何查看自己的书签统计信息？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "在浏览器中安装懒猫书签清理拓展后，点击工具栏懒猫书签清理的图标，在页面中点击书签画像按钮，即可查看您的书签统计信息。"
             }
         }, {
             "@type": "Question",
             "name": "支持哪些浏览器？",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "目前支持 Chrome 和 Edge 浏览器，后续会支持更多主流浏览器。"
+                "text": "目前支持 Chrome 和 Edge 浏览器。"
             }
         }]
     }
@@ -87,7 +94,7 @@
 
     <!-- Twitter 卡片 -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="懒猫书签清理工具 - 让书签管理变得简单">
+    <meta name="twitter:title" content="懒猫书签清理工具 - 让书签管理更轻松">
     <meta name="twitter:description" content="一键清理失效书签、重复书签和空文件夹，让您的书签井井有条。智能分析功能助您轻松管理书签，确保隐私安全。">
     <meta name="twitter:image" content="https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/ogimage_zh.png">
     
@@ -180,6 +187,7 @@
 </header>
 
     <main class="space-y-32 py-24">
+        <!-- 1. 首屏介绍 -->
         <div class="relative" id="home">
             <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
                 <div class="relative pt-36 ml-auto">
@@ -202,8 +210,8 @@
             </div>
         </div>
 
-        <!-- 核心功能部分 -->
-        <div class="section section-gray">
+        <!-- 2. 核心功能部分 -->
+        <div class="section section-white">
             <div class="container">
                 <div class="section-header" id="section-header">
                     <h2 class="section-title">核心功能</h2>
@@ -253,8 +261,59 @@
             </div>
         </div>
 
-        <!-- 特色亮点 -->
-        <div class="section">
+        <!-- 3. 用户评价部分 -->
+        <div id="testimonials" class="section-white">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="md:w-2/3 lg:w-1/2 mx-auto text-center">
+                    <div class="flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-secondary">
+                            <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h2 class="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                        用户评价
+                    </h2>
+                </div>
+                
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-16">
+                    <div class="testimonial-item">
+                        <img src="../../images/avatars/avatars-1.jpg" alt="用户头像" class="user-avatar">
+                        <div class="rating">
+                            ★★★★★
+                        </div>
+                        <div class="user-name">何**</div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            "非常实用的工具！帮我清理了大量失效的书签，能节省个人好多时间。界面简单易用，推荐！"
+                        </p>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <img src="../../images/avatars/avatars-2.jpg" alt="用户头像" class="user-avatar">
+                        <div class="rating">
+                            ★★★★★
+                        </div>
+                        <div class="user-name">贾**</div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            "一键清理失效书签太方便了，检测重复书签的功能也很棒，最惊喜的是书签画像功能，发现了自己很多有意思的书签信息。"
+                        </p>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <img src="../../images/avatars/avatars-3.jpg" alt="用户头像" class="user-avatar">
+                        <div class="rating">
+                            ★★★★★
+                        </div>
+                        <div class="user-name">王**</div>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            "界面设计很可爱，使用起来很愉快。最重要的是完全保护隐私，还不收集个人数据，很赞！"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. 特色亮点 -->
+        <div class="section section-white">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">特色亮点</h2>
@@ -288,8 +347,69 @@
             </div>
         </div>
 
-        <!-- 适合人群 -->
-        <div class="section section-gray">
+        <!-- 5. 常见问题部分 -->
+        <div class="relative py-16" id="faq">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="md:w-2/3 lg:w-1/2 mx-auto text-center mb-16">
+                    <div class="flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-secondary">
+                            <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h2 class="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                        常见问题
+                    </h2>
+                </div>
+
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                如何清理浏览器的失效书签链接？
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                在浏览器中安装懒猫书签清理拓展后，点击工具栏懒猫书签清理的图标，系统会自动扫描您的书签，识别失效链接，您可以选择需要清理的书签进行二次确认，然后点击删除按钮后，即可完成清理。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                如何清理浏览器的重复书签？
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                在浏览器中安装懒猫书签清理拓展后，点击工具栏懒猫书签清理的图标，系统会自动扫描您的书签，识别重复书签，您可以选择需要清理的书签进行二次确认，然后点击删除按钮后，即可完成清理。
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                如何查看自己的书签统计信息？
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                在浏览器中安装懒猫书签清理拓展后，点击工具栏懒猫书签清理的图标，在页面中点击书签画像按钮，即可查看您的书签统计信息。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                支持哪些浏览器？
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                目前支持 Chrome 和 Edge 浏览器。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. 适合人群 -->
+        <div class="section-white">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">适合人群</h2>
@@ -323,7 +443,7 @@
             </div>
         </div>
 
-        <!-- 温馨提示 -->
+        <!-- 7. 温馨提示 -->
         <div class="notice-section">
             <div class="container">
                 <div class="notice-box">
