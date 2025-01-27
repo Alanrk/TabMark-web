@@ -535,34 +535,3 @@ img {
     background-color: #1f2937;
     /* 暗色模式下图片加载前的背景色 */
 }
-/* 添加按钮相关样式 */
-.button-container {
-    min-height: 44px;
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
-}
-
-.bg-primary {
-    background-color: #10b981;
-    /* 或其他你想要的主色调 */
-}
-
-.hover\:bg-primary\/90:hover {
-    background-color: rgba(37, 99, 235, 0.9);
-}
-
-button {
-    transform: translateZ(0);
-    will-change: transform;
-}
-
-button.active\:scale-95:active {
-    transform: scale(0.95);
-}
-
-.transition {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
-}s

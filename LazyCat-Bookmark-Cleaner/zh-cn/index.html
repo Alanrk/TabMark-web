@@ -13,10 +13,7 @@
     <title>懒猫书签清理工具 - 让书签管理更轻松</title>
 
     <!-- 复用原有的字体和样式引用 -->
-    <link rel="preload" href="../assets/5bb06fcb.css" as="style">
-    <link rel="stylesheet" href="../assets/5bb06fcb.css" />
-    <script type="module">let e = !1; const s = document.querySelector("#navlinks"), l = document.querySelector("#hamburger"), t = document.querySelector("#navLayer"), i = [...s.querySelector("ul").children]; function a() { e ? (s.classList.add("!visible", "!scale-100", "!opacity-100", "!lg:translate-y-0"), l.classList.add("toggled"), t.classList.add("origin-top", "scale-y-100")) : (s.classList.remove("!visible", "!scale-100", "!opacity-100", "!lg:translate-y-0"), l.classList.remove("toggled"), t.classList.remove("origin-top", "scale-y-100")) } l.addEventListener("click", () => { e = !e, a() }); i.forEach(c => { c.addEventListener("click", () => { e = !e, a() }) });
-    </script>
+    <link rel="stylesheet" href="../../assets/5bb06fcb.css" />
     
     <!-- SEO meta tags -->
     <meta name="robots" content="index, follow">
@@ -192,9 +189,8 @@
                                     <span class="astro-HAP4XUPI">TabMark书签新标签页</span>
                                 </a>
                             </li>
-                            <li class="astro-HAP4XUPI"></li>
-                                <a href="../en/index.html"
-                                    class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                            <li class="astro-HAP4XUPI">
+                                <a href="../en/index.html" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
                                     <span class="astro-HAP4XUPI">English</span>
                                 </a>
                             </li>
@@ -220,13 +216,12 @@
                         <p class="mt-8 text-gray-700 dark:text-gray-300">
                             懒猫书签清理工具帮助您一键清理失效书签、重复书签和空文件夹，让书签管理变得简单高效。支持 Chrome 和 Edge 浏览器。
                         </p>
-                        <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6"></div>
-                        <div class="button-container">
-                            <button onclick="detectBrowserAndRedirect()"
-                                class="relative flex h-11 w-full items-center justify-center px-6 rounded-full bg-primary hover:bg-primary/90 active:scale-95 transition duration-300">
-                                <span id="browser-button-text" class="text-base font-semibold text-white">Add to Browser</span>
-                            </button>
-                        </div>
+                        <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+                            <button 
+                                onclick="detectBrowserAndRedirect()"
+                                class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+                                <span id="browser-button-text" class="relative text-base font-semibold text-white">添加到浏览器</span>
+                            </a>
                         </div>
                     </div>
                     <img src="../../screenshot3.png" 

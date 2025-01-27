@@ -12,10 +12,7 @@
         content="LazyCat, bookmark cleaner, bookmark cleanup tool, broken bookmark cleaner, duplicate bookmark finder, bookmark manager, Chrome extension, Edge extension, browser extension, bookmark organization, bookmark analysis, broken link detector, empty folder cleaner, bookmark statistics, browser tool, bookmark sorting, bookmark maintenance, bookmark management tool, browser productivity">
     <title>LazyCat Bookmark Cleaner - Clean Your Bookmarks Effortlessly</title>
 
-    <link rel="preload" href="../assets/5bb06fcb.css" as="style">
-    <link rel="stylesheet" href="../assets/5bb06fcb.css" />
-    <script type="module">let e = !1; const s = document.querySelector("#navlinks"), l = document.querySelector("#hamburger"), t = document.querySelector("#navLayer"), i = [...s.querySelector("ul").children]; function a() { e ? (s.classList.add("!visible", "!scale-100", "!opacity-100", "!lg:translate-y-0"), l.classList.add("toggled"), t.classList.add("origin-top", "scale-y-100")) : (s.classList.remove("!visible", "!scale-100", "!opacity-100", "!lg:translate-y-0"), l.classList.remove("toggled"), t.classList.remove("origin-top", "scale-y-100")) } l.addEventListener("click", () => { e = !e, a() }); i.forEach(c => { c.addEventListener("click", () => { e = !e, a() }) });
-    </script>
+    <link rel="stylesheet" href="../../assets/5bb06fcb.css" />
     
     <!-- SEO meta tags -->
     <meta name="robots" content="index, follow">
@@ -235,13 +232,11 @@
                         Supported on Chrome and Edge browsers.
                     </p>
                     <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-                        <div class="button-container">
-                            <button 
-                                onclick="detectBrowserAndRedirect()"
-                                class="relative flex h-11 w-full items-center justify-center px-6 rounded-full bg-primary hover:bg-primary/90 active:scale-95 transition duration-300">
-                                <span id="browser-button-text" class="text-base font-semibold text-white">Add to Browser</span>
-                            </button>
-                        </div>
+                        <button 
+                            onclick="detectBrowserAndRedirect()"
+                            class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+                            <span id="browser-button-text" class="relative text-base font-semibold text-white">Add to Browser</span>
+                        </button>
                     </div>
                 </div>
                 <img src="../../screenshot2.png" alt="lazycat bookmark cleaner screenshot" class="mt-16 mx-auto shadow-xl"
