@@ -13,6 +13,8 @@
     <title>LazyCat Bookmark Cleaner - Clean Your Bookmarks Effortlessly</title>
 
     <link rel="stylesheet" href="../../assets/5bb06fcb.css" />
+    <script type="module">let e = !1; const s = document.querySelector("#navlinks"), l = document.querySelector("#hamburger"), t = document.querySelector("#navLayer"), i = [...s.querySelector("ul").children]; function a() { e ? (s.classList.add("!visible", "!scale-100", "!opacity-100", "!lg:translate-y-0"), l.classList.add("toggled"), t.classList.add("origin-top", "scale-y-100")) : (s.classList.remove("!visible", "!scale-100", "!opacity-100", "!lg:translate-y-0"), l.classList.remove("toggled"), t.classList.remove("origin-top", "scale-y-100")) } l.addEventListener("click", () => { e = !e, a() }); i.forEach(c => { c.addEventListener("click", () => { e = !e, a() }) });
+    </script>
     
     <!-- SEO meta tags -->
     <meta name="robots" content="index, follow">
@@ -22,7 +24,6 @@
     <meta property="og:url" content="https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/en/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
-
     <!-- Schema.org data -->
     <script type="application/ld+json">
     {
@@ -187,7 +188,12 @@
                                     <span class="astro-HAP4XUPI">Features</span>
                                 </a>
                             </li>
-
+                            <li class="astro-HAP4XUPI">
+                                <a href="https://cooing-loganberry-b74.notion.site/LazyCat-Bookmark-Cleaner-User-Guide-1881ee1c3b3a80f6b051dcd46361b177"
+                                    class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                    <span class="astro-HAP4XUPI">Tutorial</span>
+                                </a>
+                            </li>
                             <li class="astro-HAP4XUPI">
                                 <a href="https://cooing-loganberry-b74.notion.site/TabMark-Bookmark-New-Tab-Product-Suggestions-14d1ee1c3b3a8063a82ef1b1bfc2e11e"
                                     target="_blank"
@@ -232,11 +238,11 @@
                         Supported on Chrome and Edge browsers.
                     </p>
                     <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-                        <button 
-                            onclick="detectBrowserAndRedirect()"
-                            class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
-                            <span id="browser-button-text" class="relative text-base font-semibold text-white">Add to Browser</span>
-                        </button>
+                            <button onclick="detectBrowserAndRedirect()"
+                                class="relative flex items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
+                                style="transform: translateZ(0); width: 200px; height: 44px;">
+                                <span id="browser-button-text" class="relative text-base font-semibold text-white">Add to Browser</span>
+                            </button>
                     </div>
                 </div>
                 <img src="../../screenshot2.png" alt="lazycat bookmark cleaner screenshot" class="mt-16 mx-auto shadow-xl"
@@ -555,4 +561,4 @@
         </div>
     </footer>
 </body>
-</html> 
+</html>
