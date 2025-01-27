@@ -139,11 +139,11 @@
             }
         }
 
-        window.onload = function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const buttonText = document.getElementById('browser-button-text');
             const isEdge = navigator.userAgent.indexOf("Edg") != -1;
             buttonText.textContent = isEdge ? "Add to Edge" : "Add to Chrome";
-        }
+        });
     </script>
 </head>
 
@@ -238,11 +238,14 @@
                         Supported on Chrome and Edge browsers.
                     </p>
                     <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-                            <button onclick="detectBrowserAndRedirect()"
-                                class="relative flex items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
-                                style="transform: translateZ(0); width: 200px; height: 44px;">
-                                <span id="browser-button-text" class="relative text-base font-semibold text-white">Add to Browser</span>
-                            </button>
+                        <button 
+                            onclick="detectBrowserAndRedirect()"
+                            class="relative flex items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
+                            style="transform: translateZ(0); width: 200px; height: 44px;">
+                            <span id="browser-button-text" class="relative text-base font-semibold text-white" style="min-width: 120px;">
+                                Add to Browser
+                            </span>
+                        </button>
                     </div>
                 </div>
                 <img src="../../screenshot2.png" alt="lazycat bookmark cleaner screenshot" class="mt-16 mx-auto shadow-xl"
