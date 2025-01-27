@@ -13,7 +13,7 @@
         <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4fFg.ttf" type="font/ttf"><link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqD-R4fFg.ttf" type="font/ttf"><link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf" type="font/ttf"><link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDLBkfFg.ttf" type="font/ttf">
 <style>@font-face {font-weight: 400;font-style: normal;font-family: Urbanist;font-display: swap;src: url(https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4fFg.ttf)}</style><style>@font-face {font-weight: 500;font-style: normal;font-family: Urbanist;font-display: swap;src: url(https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqD-R4fFg.ttf)}</style><style>@font-face {font-weight: 600;font-style: normal;font-family: Urbanist;font-display: swap;src: url(https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf)}</style><style>@font-face {font-weight: 700;font-style: normal;font-family: Urbanist;font-display: swap;src: url(https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDLBkfFg.ttf)}</style>
 <style>html { font-family: Urbanist, _font_fallback_1723703610780, sans-serif; } @font-face { font-family: _font_fallback_1723703610780; size-adjust: 100.98%; src: local('Arial'); ascent-override: 94.08%; descent-override: 24.76%; line-gap-override: 0.00%; }</style>
-
+    <link rel="preload" href="../assets/5bb06fcb.css" as="style">
     <link rel="stylesheet" href="../assets/5bb06fcb.css" /><script type="module">let e=!1;const s=document.querySelector("#navlinks"),l=document.querySelector("#hamburger"),t=document.querySelector("#navLayer"),i=[...s.querySelector("ul").children];function a(){e?(s.classList.add("!visible","!scale-100","!opacity-100","!lg:translate-y-0"),l.classList.add("toggled"),t.classList.add("origin-top","scale-y-100")):(s.classList.remove("!visible","!scale-100","!opacity-100","!lg:translate-y-0"),l.classList.remove("toggled"),t.classList.remove("origin-top","scale-y-100"))}l.addEventListener("click",()=>{e=!e,a()});i.forEach(c=>{c.addEventListener("click",()=>{e=!e,a()})});
 </script>
 <!-- Google tag (gtag.js) -->
@@ -206,14 +206,12 @@
                     TabMark 将收藏夹变成新标签页，让你收藏的书签一目了然、整洁高效，快速直达你最需要的网站和资源。搭配智能 AI 搜索，更快找到你想要的答案。支持 Chrome 和 Edge。
                 </p>
                 <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-                      <button 
-                      onclick="detectBrowserAndRedirect()"
-                       class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
-                      <span id="browser-button-text" class="relative text-base font-semibold text-white">添加到浏览器</span>
-                    </button>
-                    <a href="https://cooing-loganberry-b74.notion.site/TabMark - Bookmark New Tab-6499df3aa1c54620805e378d3b0f809c" target="_blank" class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max">
-                      <span class="relative text-base font-semibold text-primary dark:text-white">下载安装包</span>
-                    </a>
+                    <div class="button-container">
+                        <button onclick="detectBrowserAndRedirect()"
+                            class="relative flex h-11 w-full items-center justify-center px-6 rounded-full bg-primary hover:bg-primary/90 active:scale-95 transition duration-300">
+                            <span id="browser-button-text" class="text-base font-semibold text-white">添加到浏览器</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <img src="../screenshot1.png" alt="TabMark插件界面预览" class="mt-16 mx-auto shadow-xl" style="
