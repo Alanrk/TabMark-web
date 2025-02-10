@@ -40,4 +40,14 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
+
+    <!-- Root Directory -->
+    <url>
+        <loc>https://www.ainewtab.app/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.ainewtab.app/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.ainewtab.app/zh-cn/"/>
+        <lastmod>2025-02-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>

@@ -8,19 +8,19 @@
     <!-- 告诉搜索引擎不要索引这个页面 -->
     <meta name="robots" content="noindex">
     
-    <!-- 指定规范链接到英文版本 -->
-    <link rel="canonical" href="./en/index.html">
+    <!-- 建议修改为绝对路径 -->
+    <link rel="canonical" href="https://www.ainewtab.app/en/">
     
     <!-- 语言标签 -->
-    <link rel="alternate" hreflang="en" href="./en/index.html">
-    <link rel="alternate" hreflang="zh-CN" href="./zh-cn/index.html">
+    <link rel="alternate" hreflang="en" href="https://www.ainewtab.app/en/">
+    <link rel="alternate" hreflang="zh-CN" href="https://www.ainewtab.app/zh-cn/">
     
     <!-- 自动跳转脚本 -->
     <script>
         const userLang = navigator.language || navigator.userLanguage;
-        const browserLang = userLang.toLowerCase().slice(0, 2);
-        let redirectLang = browserLang === 'zh' ? 'zh-cn' : 'en';
-        window.location.replace(`./${redirectLang}/index.html`);
+        const browserLang = userLang.toLowerCase();
+        let redirectLang = browserLang.startsWith('zh') ? 'zh-cn' : 'en';
+        window.location.replace(`https://www.ainewtab.app/${redirectLang}/`);
     </script>
     
     <style>
