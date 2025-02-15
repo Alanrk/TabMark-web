@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="astro-BLV3VKFF">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/png" href="https://www.ainewtab.app/favicon.png">
+        <meta name="generator" content="Astro v1.9.2">
+        <meta name="description" content="TabMark是一款瀏覽器新標籤頁插件，支持把書籤在新標籤頁打開、AI智能搜索、多引擎對比搜索等功能，讓您的瀏覽體驗更高效便捷。">
+        <meta name="keywords" content="TabMark官網，addons，起始頁，Tabmark,新標籤頁，tabmark的新標籤頁安裝，tab，gogole chrome,new tab,標籤頁，書籤標籤頁，新標籤頁，自定義書籤，自定義新標籤頁，起始頁，tab插件，新建標籤頁,設計感，高顏值，書籤管理, 書籤首頁，收藏欄管理，瀏覽器主頁，瀏覽器設計感美化，ai搜索">
+        <meta name="msvalidate.01" content="95F687B6489089359B18DE496FD5F23B" />
+        <meta name="baidu-site-verification" content="codeva-D9jHMnyxP5" />
+        <title>TabMark新標籤頁-讓書籤管理與AI搜索更高效</title>
+        <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4fFg.ttf" type="font/ttf">
+        <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqD-R4fFg.ttf" type="font/ttf">
+        <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf" type="font/ttf">
+        <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDLBkfFg.ttf" type="font/ttf">
+
+        <link rel="stylesheet" href="https://www.ainewtab.app/assets/5bb06fcb.css"/>
+        
+        <style>
+            .testimonial-item {
+                @apply bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300;
+            }
+            
+            .user-avatar {
+                @apply w-16 h-16 rounded-full mx-auto mb-4;
+            }
+            
+            .rating {
+                @apply text-yellow-400 text-xl text-center mb-2;
+            }
+            
+            .user-name {
+                @apply text-lg font-semibold text-gray-900 dark:text-white text-center mb-4;
+            }
+            
+            .faq-item {
+                @apply transition-all duration-300 ease-in-out;
+            }
+            
+            .faq-item:hover {
+                @apply transform -translate-y-1;
+            }
+        </style>
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-21ZMLLTMMH"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-21ZMLLTMMH');
+        </script>
+
+        <!-- FAQ Schema -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "如何把書籤設為新標籤頁？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "在TabMark側邊欄文件夾或者文件夾卡片中選擇一個文件夾，右鍵點擊在彈出的上下文菜單中選擇\"設為主頁\"即可。您可以通過拖拽來調整書籤的排列順序，也可以通過側邊欄樹狀視圖管理書籤文件夾"
+              }
+            },
+            {
+              "@type": "Question", 
+              "name": "如何使用AI搜索功能？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "在新標籤頁直接使用AI搜索，支持豆包、Kimi、秘塔、felo、ChatGPT等AI搜索引擎，以及Google、Bing等傳統搜索引擎。您可以自由拖動排列搜索引擎的順序"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "如何使用對比搜索功能？", 
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "在新標籤頁搜索框輸入搜索詞，使用Cmd/Ctrl + Enter可以一鍵在所有搜索引擎中搜索；在任一網頁上選中文字後，點擊側邊欄搜索圖標或使用快捷鍵（Alt + 1-6）可以在對應搜索引擎中搜索，方便對比不同結果"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "如何管理書籤分組？",
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": "通過側邊欄的樹狀視圖，您可以方便地管理書籤文件夾結構。支持展開/折疊文件夾，快速定位和訪問所需的書籤內容"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "如何自定義搜索引擎？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "您可以通過拖拽來調整搜索引擎的排列順序，將常用的搜索引擎放在更容易訪問的位置。支持AI搜索、傳統搜索和社交媒體搜索等多種類型"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "如何在瀏覽器側邊欄中瀏覽書籤？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "在任意網頁按下 Alt/Command + B，即可打開瀏覽器側邊欄，快速訪問書籤和搜索功能。在側邊欄中，您可以以樹狀結構查看和管理所有書籤，支持展開/折疊文件夾、拖拽排序、快速搜索等功能。通過側邊欄，您可以在任何頁面快速訪問書籤，無需打開新標籤頁。"
+              }
+            }
+          ]
+        }
+        </script>
+
+        <!-- Schema.org data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "TabMark",
+            "applicationCategory": "BrowserExtension",
+            "operatingSystem": ["Chrome OS","Windows","macOS","Linux"],
+            "description": "一款智能書籤管理和AI搜索的Chrome新標籤頁擴展",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "softwareVersion": "1.240",
+            "url": "https://www.ainewtab.app",
+            "downloadUrl": "https://chromewebstore.google.com/detail/tabmark-bookmark-new-tab/jpejneelbjckppjapemgfeheifljmaib",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "ratingCount": "10"
+            }
+        }
+        </script>
+
+        <!-- SEO meta tags -->
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="TabMark新標籤頁-讓書籤管理與AI搜索更高效">
+        <meta property="og:description" content="TabMark是一款瀏覽器新標籤頁插件，支持把書籤在新標籤頁打開、AI智能搜索、多引擎對比搜索等功能，讓您的瀏覽體驗更高效便捷。">
+        <meta property="og:image" content="https://www.ainewtab.app/screenshot.png">
+        <meta property="og:url" content="https://www.ainewtab.app/">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Card tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="TabMark新標籤頁-讓書籤管理與AI搜索更高效">
+        <meta name="twitter:description" content="TabMark是一款瀏覽器新標籤頁插件，支持把書籤在新標籤頁打開、AI智能搜索、多引擎對比搜索等功能，讓您的瀏覽體驗更高效便捷。">
+        <meta name="twitter:image" content="https://www.ainewtab.app/screenshot.png">
+
+        <!-- Language links -->
+        <link rel="canonical" href="https://www.ainewtab.app/zh-tw/" />
+        <link rel="alternate" hreflang="en" href="https://www.ainewtab.app/en/" />
+        <link rel="alternate" hreflang="zh-CN" href="https://www.ainewtab.app/zh-cn/" />
+        <link rel="alternate" hreflang="zh-TW" href="https://www.ainewtab.app/zh-tw/" />
+        <link rel="alternate" hreflang="ja" href="https://www.ainewtab.app/ja/" />
+        <link rel="alternate" hreflang="x-default" href="https://www.ainewtab.app/zh-tw/" />
+    </head>
+    <body class="bg-white dark:bg-gray-900 astro-BLV3VKFF">
+        <header class="astro-HAP4XUPI">
+            <nav class="absolute z-10 w-full border-b border-black/5 dark:border-white/5 lg:border-transparent astro-HAP4XUPI">
+                <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                    <div class="relative flex flex-wrap items-center justify-between gap-6 py-8 md:gap-0 md:py-8 astro-HAP4XUPI">
+                        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max astro-HAP4XUPI">
+                            <a href="/#home" aria-label="logo" class="flex items-center space-x-2 astro-HAP4XUPI">
+                                <div aria-hidden="true" class="flex space-x-1 astro-HAP4XUPI">
+                                    <img src="https://www.ainewtab.app/icon-128.png" alt="Logo" class="h-6 w-6 astro-HAP4XUPI">
+                                </div>
+                                <span class="text-2xl font-bold text-gray-900 dark:text-white astro-HAP4XUPI">TabMark</span>
+                            </a>
+
+                            <div class="relative flex max-h-10 items-center lg:hidden astro-HAP4XUPI">
+                                <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 astro-HAP4XUPI">
+                                    <div aria-hidden="true" id="line" class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300 astro-HAP4XUPI"></div>
+                                    <div aria-hidden="true" id="line2" class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300 astro-HAP4XUPI"></div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none astro-HAP4XUPI">
+                            <div class="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0 astro-HAP4XUPI">
+                                <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-sm astro-HAP4XUPI">
+                                    <li class="astro-HAP4XUPI">
+                                        <a href="#features" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                            <span class="astro-HAP4XUPI">功能特點</span>
+                                        </a>
+                                    </li>
+                                    <li class="astro-HAP4XUPI">
+                                        <a href="https://cooing-loganberry-b74.notion.site/TabMark-Bookmark-New-Tab-7a083a74f84e4bb48345e389c1e53717?pvs=74" target="_blank" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                            <span class="astro-HAP4XUPI">部落格</span>
+                                        </a>
+                                    </li>
+                                    <li class="astro-HAP4XUPI">
+                                        <a href="https://cooing-loganberry-b74.notion.site/TabMark-Support-14d1ee1c3b3a8063a82ef1b1bfc2e11e" target="_blank" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                            <span class="astro-HAP4XUPI">幫助中心</span>
+                                        </a>
+                                    </li>
+                                    <li class="astro-HAP4XUPI">
+                                        <a href="https://cooing-loganberry-b74.notion.site/Tabmark-59054bd6e444458986d1fc61a383e095" target="_blank" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                            <span class="astro-HAP4XUPI">反饋建議</span>
+                                        </a>
+                                    </li>
+                                    <li class="astro-HAP4XUPI">
+                                        <a href="https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/zh-tw/" target="_blank" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4 astro-HAP4XUPI">
+                                            <span class="astro-HAP4XUPI">懶貓書籤清理</span>
+                                        </a>
+                                    </li>
+                                    <li class="astro-HAP4XUPI relative">
+                                        <div class="relative">
+                                            <select onchange="window.location.href=this.value"
+                                                class="appearance-none bg-transparent font-semibold text-gray-700 dark:text-white cursor-pointer pr-8 pl-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20">
+                                                <option value="https://www.ainewtab.app/zh-tw/" selected>繁體中文</option>
+                                                <option value="https://www.ainewtab.app/zh-cn/">简体中文</option>
+                                                <option value="https://www.ainewtab.app/en/">English</option> 
+                                                <option value="https://www.ainewtab.app/ja/">日本語</option>
+                                            </select>
+                                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                                                <svg class="h-4 w-4 fill-current text-gray-700 dark:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="space-y-24 mb-1">
+            <div class="relative" id="home">
+                <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+                    <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-emerald-400 dark:from-emerald-600"></div>
+                    <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+                </div>
+                <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                    <div class="relative pt-36 ml-auto">
+                        <div class="lg:w-2/3 text-center mx-auto">
+                            <h1 class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">
+                                你的<span class="text-primary dark:text-white">書籤</span>，值得被<span class="text-primary dark:text-white">重新看見</span>
+                            </h1>
+                            <p class="mt-8 text-gray-700 dark:text-gray-300">
+                                TabMark 將收藏夾變成新標籤頁，讓你收藏的書籤一目了然、整潔高效，快速直達你最需要的網站和資源。搭配智能 AI 搜索，更快找到你想要的答案。支持 Chrome 和 Edge。
+                            </p>
+                            <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+                                <button onclick="detectBrowserAndRedirect()"
+                                    class="relative flex items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
+                                    style="transform: translateZ(0); width: 160px; height: 50px;">
+                                    <span id="browser-button-text" class="relative text-base font-semibold text-white">添加到瀏覽器</span>
+                                </button>
+                            </div>
+                        </div>
+                        <img src="https://www.ainewtab.app/screenshot1.png" alt="TabMark插件界面預覽" class="mt-16 mx-auto shadow-xl" style="width: 100%; max-width: 1232px; aspect-ratio: 1232/804; height: auto; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div id="features">
+                <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                    <div class="md:w-2/3 lg:w-1/2 mx-auto text-center">
+                        <div class="flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-secondary">
+                                <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h2 class="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                            我能幫你做什麼
+                        </h2>
+                    </div>
+
+                    <div class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
+                        <!-- Feature 1 -->
+                        <div class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                            <div class="relative space-y-8 py-12 p-8">
+                                <span class="w-12 text-5xl inline-block">
+                                    🏠
+                                </span>
+                                <div class="space-y-2">
+                                    <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                        將書籤設置為新標籤頁
+                                    </h5>
+                                    <p class="text-gray-600 dark:text-gray-300">
+                                        安裝擴展後，可以選擇常用的書籤文件夾。只需右鍵點擊，選擇"將書籤設為主頁"，即可在新標籤頁中快速打開選中書籤文件夾。<br><br>
+                                        支持書籤拖拽排序，讓書籤管理更符合你的習慣。側邊欄樹狀文件夾視圖讓你直觀管理書籤文件夾，快速找到所需內容。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                            <div class="relative space-y-8 py-12 p-8">
+                                <span class="w-12 text-5xl inline-block">
+                                    🔍
+                                </span>
+                                <div class="space-y-2">
+                                    <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                        AI智能搜索
+                                    </h5>
+                                    <p class="text-gray-600 dark:text-gray-300">
+                                        在新標籤頁直接使用 AI 搜索，快速訪問豆包、Kimi、秘塔、felo、ChatGPT 等，還支持 Google、Bing 等經典搜索引擎，隨心拖動排列，更加符合你的使用習慣。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                            <div class="relative space-y-8 py-12 p-8">
+                                <span class="w-12 text-5xl inline-block">
+                                    🆚
+                                </span>
+                                <div class="space-y-2">
+                                    <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                        一鍵對比搜索
+                                    </h5>
+                                    <p class="text-gray-600 dark:text-gray-300">
+                                        按下Cmd/Ctrl + Enter可以一鍵在所有搜索引擎中搜索，對比不同結果，助你找到最佳答案。
+                                        <br><br>
+                                        選中文字後通過點擊側邊欄或快捷鍵（Alt + 1-7 打開對應搜索，Cmd/Ctrl + Enter 打開全部搜索）高效啟動搜索。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Feature 4 -->
+                        <div class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                            <div class="relative space-y-8 py-12 p-8">
+                                <span class="w-12 text-5xl inline-block">
+                                    ☀️
+                                </span>
+                                <div class="space-y-2">
+                                    <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                        自定義新標籤頁
+                                    </h5>
+                                    <p class="text-gray-600 dark:text-gray-300">
+                                        支持暗黑模式和壁紙隨心換：提供 10 張精選預設壁紙，支持本地上傳，個性化你的新標籤頁。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search Engines Section -->
+                    <div class="hidden py-8 mt-16 border-b border-gray-100 dark:border-gray-800 sm:flex justify-center">
+                        <div class="text-center">
+                            <h6 class="text-lg font-semibold text-gray-700 dark:text-white">支持AI搜索、傳統搜索、社交媒體搜索</h6>
+                            <p class="mt-2 text-gray-500">更多搜索支持添加中</p>
+                        </div>
+                    </div>
+
+                    <!-- Search Engine Logos -->
+                    <div class="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
+                        <div class="p-4 transition duration-200 hover:grayscale-0">
+                            <img src="https://www.ainewtab.app/images/clients/google-logo.svg" class="h-8 w-auto mx-auto" loading="lazy" alt="Google搜索引擎" width="32" height="32">
+                        </div>
+                        <div class="p-4 transition duration-200 hover:grayscale-0">
+                            <img src="https://www.ainewtab.app/images/clients/bing-logo.png" class="h-8 w-auto mx-auto" loading="lazy" alt="Bing搜索引擎" width="32" height="32">
+                        </div>
+                        <div class="p-4 flex transition duration-200 hover:grayscale-0">
+                            <img src="https://www.ainewtab.app/images/clients/chatgpt-logo.svg" class="h-8 w-auto m-auto" loading="lazy" alt="ChatGPT" width="32" height="32">
+                        </div>
+                        <div class="p-4 transition duration-200 hover:grayscale-0">
+                            <img src="https://www.ainewtab.app/images/clients/felo-logo.svg" class="h-8 w-auto mx-auto" loading="lazy" alt="Felo搜索引擎" width="32" height="32">
+                        </div>
+                        <div class="p-4 flex transition duration-200 hover:grayscale-0">
+                            <img src="https://www.ainewtab.app/images/clients/doubao-logo.png" class="h-8 w-auto m-auto" loading="lazy" alt="豆包" width="32" height="32">
+                        </div>
+                        <div class="p-4 transition duration-200 hover:grayscale-0">
+                            <img src="https://www.ainewtab.app/images/clients/kimi-logo.svg" class="h-8 w-auto mx-auto" loading="lazy" alt="Kimi" width="32" height="32">
+                        </div>
+                        <div class="p-4 transition duration-200 hover:grayscale-0">
+                            <img src="https://www.ainewtab.app/images/clients/metaso-logo.png" class="h-8 w-auto mx-auto" loading="lazy" alt="秘塔" width="32" height="32">
+                        </div>
+                        <div class="p-4 grayscale flex transition duration-200 hover:grayscale-0">
+                            <img src="https://www.ainewtab.app/images/clients/perplexity-logo.svg" class="h-8 w-auto m-auto" loading="lazy" alt="Perplexity" width="32" height="32">
+                        </div>
+                        <div class="p-4 grayscale flex transition duration-200 hover:grayscale-0">
+                            <img src="https://www.ainewtab.app/images/clients/claude-logo.svg" class="h-8 w-auto m-auto" loading="lazy" alt="Claude" width="32" height="32">
+                        </div>
+                        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                            <img src="https://www.ainewtab.app/images/clients/jike-logo.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="即刻" width="32" height="32">
+                        </div>
+                        <div class="p-4 grayscale flex transition duration-200 hover:grayscale-0">
+                            <img src="https://www.ainewtab.app/images/clients/twitter-logo.png" class="h-8 w-auto m-auto" loading="lazy" alt="Twitter" width="32" height="32">
+                        </div>
+                        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                            <img src="https://www.ainewtab.app/images/clients/xiaohongshu-logo.svg" class="h-8 w-auto mx-auto" loading="lazy" alt="小紅書" width="32" height="32">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Section -->
+            <div id="testimonials">
+                <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                    <div class="md:w-2/3 lg:w-1/2 mx-auto text-center">
+                        <div class="flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-secondary">
+                                <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h2 class="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                            用戶評價
+                        </h2>
+                    </div>
+                    
+                    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-16">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-item">
+                            <img src="https://www.ainewtab.app/images/avatars/avatars-1.jpg" alt="用戶頭像" class="user-avatar">
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+                            <div class="user-name">Chicagoake</div>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                "很大程度上替代了 Arc 的各項功能！正好 Arc 被遺棄了，是時候回歸 Chrome 了"
+                            </p>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-item">
+                            <img src="https://www.ainewtab.app/images/avatars/avatars-2.jpg" alt="用戶頭像" class="user-avatar">
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+                            <div class="user-name">李**</div>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                "TabMark完美符合我的需求，利用書籤作為新標籤頁，還有一鍵搜索，還會自動分組真的好用"
+                            </p>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-item">
+                            <img src="https://www.ainewtab.app/images/avatars/avatars-3.jpg" alt="用戶頭像" class="user-avatar">
+                            <div class="rating">
+                                ★★★★★
+                            </div>
+                            <div class="user-name">Yoann</div>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                "看到了一些vivaldi和arc的書籤/側邊欄設計要素🤔很久沒看到這麼有趣的了"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="relative py-16" id="faq">
+                <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                    <div class="md:w-2/3 lg:w-1/2 mx-auto text-center mb-16">
+                        <div class="flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-secondary">
+                                <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        
+                        <h2 class="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                            常見問題
+                        </h2>
+                    </div>
+                    
+                    <div class="max-w-3xl mx-auto space-y-4">
+                        <!-- FAQ Item 1 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                            <div class="space-y-4">
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                    如何把書籤設為新標籤頁？
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    在TabMark側邊欄文件夾或者文件夾卡片中選擇一個文件夾，右鍵點擊在彈出的上下文菜單中選擇"設為主頁"即可。您可以通過拖拽來調整書籤的排列順序，也可以通過側邊欄樹狀視圖管理書籤文件夾。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                            <div class="space-y-4">
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                    如何使用AI搜索功能？
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    在新標籤頁直接使用AI搜索，支持豆包、Kimi、秘塔、felo、ChatGPT等AI搜索引擎，以及Google、Bing等傳統搜索引擎。您可以自由拖動排列搜索引擎的順序。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                            <div class="space-y-4">
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                    如何使用對比搜索功能？
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    在新標籤頁搜索框輸入搜索詞，使用Cmd/Ctrl + Enter可以一鍵在所有搜索引擎中搜索；在任一網頁上選中文字後，點擊側邊欄搜索圖標或使用快捷鍵（Alt + 1-6）可以在對應搜索引擎中搜索，方便對比不同結果。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                            <div class="space-y-4">
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                    如何管理書籤分組？
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    通過側邊欄的樹狀視圖，您可以方便地管理書籤文件夾結構。支持展開/折疊文件夾，快速定位和訪問所需的書籤內容。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                            <div class="space-y-4">
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                    如何自定義搜索引擎？
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    您可以通過拖拽來調整搜索引擎的排列順序，將常用的搜索引擎放在更容易訪問的位置。支持AI搜索、傳統搜索和社交媒體搜索等多種類型。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 6 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 faq-item">
+                            <div class="space-y-4">
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                    如何在瀏覽器側邊欄中瀏覽書籤？
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    在任意網頁按下 Alt/Command + B，即可打開瀏覽器側邊欄，快速訪問書籤和搜索功能。在側邊欄中，您可以以樹狀結構查看和管理所有書籤，支持展開/折疊文件夾、拖拽排序、快速搜索等功能。通過側邊欄，您可以在任何頁面快速訪問書籤，無需打開新標籤頁。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="relative pt-32 pb-16 mt-16">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-4">
+                    <!-- Product Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">產品</h3>
+                        <ul class="mt-4 space-y-2">
+                            <li>
+                                <a href="https://cooing-loganberry-b74.notion.site/Tabmark-15b1ee1c3b3a809fbc09f5c87c8c3d60?pvs=73" 
+                                   class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition">
+                                    更新日誌
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://cooing-loganberry-b74.notion.site/Tabmark-15b1ee1c3b3a8000b091fbb137295f30" 
+                                   class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition">
+                                    開發計劃
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Support Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">支援</h3>
+                        <ul class="mt-4 space-y-2">
+                            <li>
+                                <a href="https://cooing-loganberry-b74.notion.site/TabMark-Bookmark-New-Tab-7a083a74f84e4bb48345e389c1e53717?pvs=74" 
+                                   class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition">
+                                    幫助中心
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://cooing-loganberry-b74.notion.site/TabMark-Bookmark-New-Tab-Product-Suggestions-14d1ee1c3b3a8063a82ef1b1bfc2e11e" 
+                                   class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition">
+                                    反饋建議
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Recommended Tools -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">推薦工具</h3>
+                        <ul class="mt-4 space-y-2">
+                            <li>
+                                <a href="https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/zh-tw/" 
+                                   class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition">
+                                    懶貓書籤清理
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.lifecoach-ai.net/zh-tw/" 
+                                   class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition">
+                                    lifecoach-ai.net
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">關注我們</h3>
+                        <ul class="mt-4 space-y-2">
+                            <li>
+                                <a href="https://twitter.com/orionwange" 
+                                   class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                                    </svg>
+                                    Twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Alanrk/TabMark-Bookmark-New-Tab" 
+                                   class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.orionwang.com/about/" 
+                                   class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                                    </svg>
+                                    關於作者
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pt-8 mt-8 border-t border-gray-200 dark:border-gray-800">
+                    <p class="text-center text-sm text-gray-600 dark:text-gray-400">
+                        © 2024 TabMark. 保留所有權利。
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script type="module">
+            // 導航腳本
+            const hamburger = document.querySelector("#hamburger");
+            const menu = document.querySelector("#navlinks");
+            const body = document.querySelector("body");
+
+            hamburger.addEventListener("click", () => {
+                menu.classList.toggle("invisible");
+                menu.classList.toggle("opacity-0");
+                menu.classList.toggle("translate-y-1");
+                menu.classList.toggle("scale-90");
+                hamburger.classList.toggle("toggled");
+            });
+        </script>
+        <script>
+            function detectBrowserAndRedirect() {
+                const isEdge = navigator.userAgent.indexOf("Edg") != -1;
+                const chromeStoreUrl = "https://chromewebstore.google.com/detail/tabmark-bookmark-new-tab/jpejneelbjckppjapemgfeheifljmaib";
+                const edgeStoreUrl = "https://microsoftedge.microsoft.com/addons/detail/tabmarkbookmark-new-tab/gbndiacllfljcmojlfgookcdjkbcigmg";
+
+                if (isEdge) {
+                    window.open(edgeStoreUrl, '_blank');
+                } else {
+                    window.open(chromeStoreUrl, '_blank');
+                }
+            }
+
+            window.onload = function() {
+                const buttonText = document.getElementById('browser-button-text');
+                const isEdge = navigator.userAgent.indexOf("Edg") != -1;
+                buttonText.textContent = isEdge ? "添加到 Edge" : "添加到 Chrome";
+            }
+        </script>
+    </body>
+</html> 

@@ -5,17 +5,30 @@
     <url>
         <loc>https://www.ainewtab.app/en/</loc>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.ainewtab.app/zh-cn/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.ainewtab.app/zh-tw/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://www.ainewtab.app/en/"/>
         <lastmod>2025-02-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- TabMark Chinese Homepage -->
+    <!-- TabMark Chinese (Simplified) Homepage -->
     <url>
         <loc>https://www.ainewtab.app/zh-cn/</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://www.ainewtab.app/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.ainewtab.app/zh-tw/"/>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.ainewtab.app/zh-cn/"/>
+        <lastmod>2025-02-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- TabMark Chinese (Traditional) Homepage -->
+    <url>
+        <loc>https://www.ainewtab.app/zh-tw/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.ainewtab.app/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.ainewtab.app/zh-cn/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.ainewtab.app/zh-tw/"/>
         <lastmod>2025-02-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -46,6 +59,7 @@
         <loc>https://www.ainewtab.app/</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://www.ainewtab.app/en/"/>
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.ainewtab.app/zh-cn/"/>
+        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.ainewtab.app/zh-tw/"/>
         <lastmod>2025-02-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
